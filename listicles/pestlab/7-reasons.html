@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7 Reasons Families Are Plugging One Into Every Room | PestLab</title>
+<meta name="description" content="Why families are swapping traps and sprays for a chemical-free plug-in.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=AR+One+Sans:wght@400;600;700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  /* ===== Edit here: link every button goes to ===== */
+  :root{
+    --blue:#0266FE;       /* PestLab brand blue (replaces the reference's red) */
+    --blue-dark:#0049B8;
+    --cream:#FFF8EE;
+    --yellow:#FCDE58;
+    --yellow-box:#FFF6D6;
+    --ink:#1A1A1A;
+    --text:#353535;
+    --green:#1F6B3A;
+    --green-bg:#EEF5EE;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--text);font-family:'AR One Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;letter-spacing:.2px;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  .wrap{max-width:620px;margin:0 auto;padding:0 20px}
+
+  .topbar{background:var(--blue);color:#fff;text-align:center;font:700 13px/1.2 'Poppins',sans-serif;letter-spacing:.6px;padding:9px 12px;text-transform:uppercase}
+
+  h1{font-family:'Caprasimo',serif;font-weight:400;color:var(--ink);font-size:28px;line-height:1.18;margin:22px 0 14px}
+  h1 .hl{background:var(--blue);color:#fff;padding:0 6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .spoiler{display:inline-block;background:var(--green);color:#fff;font:700 14px 'Poppins',sans-serif;letter-spacing:.6px;padding:5px 10px;border-radius:3px;margin-bottom:14px}
+  .ybox{background:var(--yellow-box);border:2px solid var(--ink);border-radius:6px;padding:16px;font-weight:600;color:var(--ink);font-size:16px;line-height:1.7;letter-spacing:.4px}
+
+  .hero{position:relative;margin:16px 0 0}
+  .hero img{border-radius:8px;width:100%;aspect-ratio:1/1;object-fit:cover}
+  .badge{position:absolute;top:-10px;right:-8px;width:92px;height:92px;border-radius:50%;background:var(--blue);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(12deg);box-shadow:0 0 0 4px #fff inset,0 0 0 6px var(--blue);text-align:center;font-family:'Poppins',sans-serif}
+  .badge b{font-size:16px;line-height:1}
+  .badge b big{font-size:26px;font-weight:800;display:block}
+  .badge small{font-size:10px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}
+
+  .byline{display:flex;gap:12px;align-items:center;margin:18px 0}
+  .byline img{width:50px;height:50px;border-radius:50%;border:2px solid var(--yellow);object-fit:cover;background:#fff}
+  .byline div{font-size:16px;line-height:1.4}
+  .byline small{display:block;color:#8a8a8a;font-size:13px}
+
+  p{margin:0 0 18px}
+  strong{color:var(--ink)}
+  .alert{font-weight:600;color:var(--ink)}
+
+  h2{font-family:'Caprasimo',serif;font-weight:400;color:var(--ink);font-size:27px;line-height:1.22;margin:40px 0 16px}
+  h2 .n{color:var(--blue)}
+  .img{border-radius:12px;overflow:hidden;margin:6px 0 16px}
+  .img img{width:100%;aspect-ratio:1/1;object-fit:cover}
+
+  .review{background:var(--yellow-box);border:3px solid var(--ink);border-radius:8px;padding:16px;margin:0 0 10px}
+  .review q{display:block;font-weight:600;color:var(--ink);font-size:15px;line-height:1.65;letter-spacing:.5px;quotes:'"' '"'}
+  .stars{color:#F5C518;font-size:21px;letter-spacing:1px;margin:6px 0 2px}
+  .who{font-size:14px;color:var(--text);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .who em{color:#2E8B3A;font-style:italic}
+  .tag{background:#E7F0FF;color:var(--blue);font:700 11.5px 'Poppins',sans-serif;padding:2px 8px;border-radius:20px}
+
+  .pull{border-left:4px solid var(--blue);padding:2px 0 2px 14px;margin:0 0 18px}
+  .pull b{display:block;font-family:'Caprasimo',serif;font-weight:400;color:var(--blue-dark);font-size:19px;line-height:1.35}
+  .pull small{color:#8a8a8a;font-size:13px}
+
+  .list{background:#fff;border-radius:12px;padding:14px;margin:0 0 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+  .list h4{font:700 15px 'AR One Sans',sans-serif;color:var(--ink);margin:0 0 10px}
+  .list div{border-left:4px solid;background:#F7F7F7;padding:7px 12px;margin:0 0 8px;font-size:15px;line-height:1.45}
+  .list div small{display:block;color:#8a8a8a;font-size:12.5px}
+
+  .btn{display:inline-block;background:var(--yellow);color:var(--ink);font:800 17px 'Poppins',sans-serif;letter-spacing:.6px;text-transform:uppercase;text-decoration:none;padding:13px 24px;border-radius:8px;box-shadow:0 3px 0 #EBBF20}
+  .btn.block{display:block;text-align:center;padding:16px;font-size:19px;line-height:1.35}
+
+  .ship{border:2px dashed var(--green);background:var(--green-bg);border-radius:10px;padding:18px 20px;text-align:center;margin:34px 0}
+  .ship h3{font-family:'Caprasimo',serif;font-weight:400;color:var(--green);font-size:23px;line-height:1.25;margin-bottom:6px}
+  .ship p{margin:0;font-size:16px}
+
+  .offer{position:relative;border:2px solid var(--blue);border-radius:14px;background:#fff;padding:22px 18px 22px;margin:30px 0 24px;text-align:center}
+  .ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font:800 13px 'Poppins',sans-serif;letter-spacing:.8px;padding:4px 14px;border-radius:20px;white-space:nowrap}
+  .offer .pimg{border-radius:10px;background:#F2F6FF;margin-bottom:16px}
+  .eyebrow{display:flex;align-items:center;gap:12px;justify-content:center;font:700 14px 'Poppins',sans-serif;letter-spacing:2px;color:#444;margin-bottom:6px}
+  .eyebrow:before,.eyebrow:after{content:"";width:36px;height:1px;background:#444}
+  .big{font:800 34px/1.08 'Poppins',sans-serif;color:var(--ink);margin-bottom:10px}
+  .pill{display:inline-block;background:#F2F2F2;border-radius:20px;font:700 12.5px 'Poppins',sans-serif;letter-spacing:.5px;padding:6px 12px;margin:10px 4px 0;text-transform:uppercase}
+  .pill span{color:var(--blue)}
+  .risk{font-style:italic;font-size:18px;margin:16px 0 8px}
+  .proof{font:600 17px/1.55 'Poppins',sans-serif;color:var(--ink)}
+
+  .card{background:#fff;border-radius:16px;padding:22px 18px;box-shadow:0 2px 10px rgba(0,0,0,.06);margin-bottom:30px}
+  .card h3{text-align:center;font:400 22px 'AR One Sans',sans-serif;color:var(--ink);line-height:1.35}
+  .card .sub{display:block;text-align:center;background:#FFF0B8;border-radius:20px;padding:5px 12px;font-size:14px;color:#6B5A1E;margin:8px 0 14px}
+  .check{display:flex;gap:12px;align-items:flex-start;border-radius:10px;padding:11px 14px;margin-bottom:9px;font-size:15px;line-height:1.5}
+  .check i{flex:0 0 22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font:700 12px/22px sans-serif;text-align:center;font-style:normal;margin-top:1px}
+  .c1{background:#FFF6D6}.c2{background:#FDE4EC}.c3{background:#EDE6FB}.c4{background:#E4F3E6}.c5{background:#E3EEFF}
+
+  .closing{font-family:'Caprasimo',serif;color:var(--ink);text-align:center;font-size:21px;line-height:1.4;margin:10px 0 50px}
+
+  footer{background:#FBF2E2;border-top:1px solid #E8DCC6;padding:24px 20px 120px;text-align:center;font-size:13px;color:#555;line-height:1.6}
+  footer p{margin:0 0 8px}
+  footer small{display:block;font-size:12px;color:#777;max-width:560px;margin:10px auto 0}
+
+  /* sticky CTA */
+  .sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;box-shadow:0 -2px 12px rgba(0,0,0,.12);padding:10px 14px 8px;text-align:center;z-index:50;transform:translateY(120%);transition:transform .25s}
+  .sticky.on{transform:none}
+  .sticky a{display:block;max-width:560px;margin:0 auto;background:var(--blue);color:#fff;text-decoration:none;font:800 17px 'Poppins',sans-serif;letter-spacing:1px;padding:13px;border-radius:8px}
+  .sticky small{display:block;font-size:12px;color:#333;margin-top:5px;letter-spacing:.5px}
+  @media (min-width:700px){h1{font-size:36px}h2{font-size:31px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">🛡️ Black Friday Sale Is Live: Up To 40% Off 🛡️</div>
+
+<main class="wrap">
+  <h1>7 Reasons Families Are Quietly Plugging One Into Every Room Before The Holidays <span class="hl">"The Only Pest Fix That Doesn't Need A Single Trap"</span></h1>
+
+  <span class="spoiler">SPOILER ALERT!</span>
+  <div class="ybox">The tiny plug-in that's designed to keep pests away, with no poison, no traps and no sprays anywhere near your kids or pets.</div>
+
+  <div class="hero">
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/PestLab-Clip9b_1.jpg?width=900" alt="A PestLab customer at home with her dog and several PestLab boxes">
+    <div class="badge"><small>Up to</small><b><big>40%</big></b><small>off</small></div>
+  </div>
+
+  <div class="byline">
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/ChatGPT_Image_Jul_9_2025_06_41_40_AM.png?width=120" alt="">
+    <div>By <strong>The PestLab Team</strong>, Home &amp; Family<small>Last Updated Nov 26, 2026</small></div>
+  </div>
+
+  <p class="alert">⚠️ Black Friday pricing, up to 40% off while stock lasts.</p>
+  <p>Keep reading to see why families are ordering one for every room…</p>
+  <p>You know the moment. The house is finally clean, the guests are coming, and you open the pantry door.</p>
+  <p>And there it is. <em>A little dropping on the shelf.</em> A scratching sound in the wall at 2 a.m. Something with too many legs running behind the fridge.</p>
+  <p>So you do what everyone does. You buy traps. You buy the spray that makes the kitchen smell like a chemical plant. You hide poison where you <em>hope</em> the dog won't find it.</p>
+  <p>And every time your toddler crawls across the floor, you think: <strong>What did I just put down there?</strong></p>
+  <p>This year, more and more families are trying something different. Here's why…</p>
+
+  <!-- 1 -->
+  <h2><span class="n">1.</span> No Traps To Set. No Poison To Hide. No Mess To Clean Up.</h2>
+  <p>Traps need checking. Bait needs hiding. Sprays need airing out. And all of it needs doing <em>again</em> next week.</p>
+  <p>PestLab™ is different. <strong>You plug it into a wall socket and that's it.</strong> No refills, no batteries, no cartridges, nothing to empty.</p>
+  <p>It uses high-frequency ultrasonic sound that's designed to make your home an unpleasant place for pests, so they'd rather be somewhere else.</p>
+  <p>🔌 It takes about three seconds to set up. Really.</p>
+  <div class="img"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/WhatsApp_Image_2024-07-27_at_11.24.26_4.jpg?width=900" alt="PestLab plugged into a kitchen outlet"></div>
+  <div class="review">
+    <q>With my arthritis, I couldn't keep bending down to set and check traps. The PestLab system was completely hands-off for me, just plug in and forget.</q>
+    <div class="stars">★★★★★</div>
+    <div class="who">Walter G. <em>PestLab Customer</em> <span class="tag">🏡 Homeowner</span></div>
+  </div>
+
+  <!-- 2 -->
+  <h2><span class="n">2.</span> Nothing Toxic Near Your Kids Or Your Pets</h2>
+  <p>Every year it gets harder to know what's safe. Read the back of most pest sprays and you'll find a list of warnings longer than the instructions.</p>
+  <p>PestLab™ has <strong>no chemicals, no pesticides and no poisons.</strong> Nothing to spill, nothing to breathe in, nothing for little hands (or paws) to find.</p>
+  <p>The brand designed it for homes with children and pets, which is exactly why parents are the ones buying it.</p>
+  <div class="pull"><b>"No sprays. No smell. No poison in the cupboard under the sink."</b><small>Why parents are switching</small></div>
+  <p>🐶 Your family gets the house back. Not the exterminator's chemicals.</p>
+  <div class="img"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/2.jpg?width=900" alt="PestLab, human and pet safe, 300 sq ft coverage" style="aspect-ratio:auto"></div>
+  <div class="review">
+    <q>As a nurse and single mom of two young children and a dog… I needed something effective yet safe for my kids and my puppy. No chemicals, no poisons, just plug them in.</q>
+    <div class="stars">★★★★★</div>
+    <div class="who">Maria T. <em>PestLab Customer</em> <span class="tag">👩‍👧‍👦 Mom of 2</span></div>
+  </div>
+
+  <!-- 3 -->
+  <h2><span class="n">3.</span> It Works While You Sleep (And You Won't Hear A Thing)</h2>
+  <p>Pests don't keep office hours. Most of them come out at night, when the house is quiet and the lights are off.</p>
+  <p>That's why PestLab™ <strong>runs continuously, day and night.</strong> And because the sound is ultrasonic, it's quiet for the humans in the house.</p>
+  <p>It's designed to repel the usual suspects:</p>
+  <div class="list">
+    <h4>What PestLab™ is designed to keep away:</h4>
+    <div style="border-color:#2E8B3A">Mice &amp; rats<small>Pantries, garages, attics</small></div>
+    <div style="border-color:#E0567A">Cockroaches, ants &amp; silverfish<small>Kitchens and bathrooms</small></div>
+    <div style="border-color:#2F80ED">Spiders &amp; mosquitoes<small>Bedrooms, basements, corners</small></div>
+    <div style="border-color:#F2A007">Bed bugs &amp; fleas<small>Bedrooms and pet areas</small></div>
+  </div>
+  <p>🌙 You go to bed. It keeps going.</p>
+  <div class="img"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/WhatsApp_Image_2024-07-27_at_11.24.26_5.jpg?width=900" alt="PestLab emitting ultrasonic waves in a kitchen" style="aspect-ratio:auto"></div>
+  <div class="review">
+    <q>They are so silent I keep checking to see if they're still plugged in.</q>
+    <div class="stars">★★★★★</div>
+    <div class="who">Derek J. <em>PestLab Customer</em> <span class="tag">🏡 Homeowner</span></div>
+  </div>
+
+  <!-- 4 -->
+  <h2><span class="n">4.</span> One For Every Room, Because Sound Doesn't Go Through Walls</h2>
+  <p>Here's the part most people don't know: ultrasonic waves <strong>don't pass through walls.</strong></p>
+  <p>So one device in the hallway won't cover the kitchen. That's why the brand recommends <strong>one unit per room.</strong> Each device covers up to 300 sq ft.</p>
+  <p>Bedrooms. Kitchen. Basement. Garage. The guest room your in-laws are about to sleep in.</p>
+  <p>📦 That's why most families order a multi-pack, and why the bigger packs are the ones on sale.</p>
+  <div class="img"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/4_0ca9f2e0-4cc6-403a-b9a7-3e5133d21efa.jpg?width=900" alt="Where PestLab works: bedrooms, kitchens, basements, garages" style="aspect-ratio:auto"></div>
+  <div class="review">
+    <q>I placed one device in each room and around our kitchen. The silent operation means we don't even notice they're working.</q>
+    <div class="stars">★★★★★</div>
+    <div class="who">Maria T. <em>PestLab Customer</em> <span class="tag">👩‍👧‍👦 Mom of 2</span></div>
+  </div>
+
+  <!-- 5 -->
+  <h2><span class="n">5.</span> It Costs Less Than One Visit From The Exterminator</h2>
+  <p>Call a pest control company and the quote can be hundreds of dollars, sometimes more. Then they want to come back every few months.</p>
+  <p>PestLab™ starts at <strong>$29.99</strong>, and drops to <strong>$18 per device</strong> when you protect the whole house with a 9-pack.</p>
+  <p>That's a one-time purchase. No subscription. No technician in your kitchen.</p>
+  <p>💸 Protect every room for less than a single call-out.</p>
+  <div class="img"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Lois_Pest_Lab_Stills_3_2.jpg?width=900" alt="A PestLab customer with her PestLab devices"></div>
+  <div class="review">
+    <q>One exterminator tried to charge me $1,700 until my grandson plugged in these PestLab gizmos. I slept through the night for the first time in months.</q>
+    <div class="stars">★★★★★</div>
+    <div class="who">Edith M. <em>PestLab Customer</em> <span class="tag">👵 Grandma</span></div>
+  </div>
+
+  <!-- 6 -->
+  <h2><span class="n">6.</span> Set It Once. Forget About It For Years.</h2>
+  <p>Picture this: you plug one in every room this weekend… and you don't think about it again.</p>
+  <p>No refills to reorder. No traps to empty. No "did anyone check the basement?"</p>
+  <p>Each PestLab™ has an advertised lifespan of <strong>4–5 years</strong> of continuous use. It just sits quietly in the outlet and does its job.</p>
+  <p>🎁 And because it's so simple, people end up buying them for their parents, their kids and their neighbours too.</p>
+  <a class="btn" data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Check Availability →</a>
+  <div class="img" style="margin-top:18px"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/pestlab_mashup_images_correct_893d0741-ef79-4275-827d-a5517be3dd0e.png?width=900" alt="PestLab customers with their devices"></div>
+  <div class="review">
+    <q>PestLab repellers were easy to set up, just plug them in and let them run… I just ordered more for my guest rooms.</q>
+    <div class="stars">★★★★★</div>
+    <div class="who">Tracy W. <em>PestLab Customer</em> <span class="tag">🏡 Homeowner</span></div>
+  </div>
+
+  <!-- 7 -->
+  <h2><span class="n">7.</span> You Can Try It For 90 Days, Risk-Free</h2>
+  <p>Nobody likes paying for something that doesn't work for them. That's why every PestLab™ comes with a <strong>90-day money-back guarantee.</strong></p>
+  <p>Plug it in. Live with it for three months. If you're not happy, send it back for a full refund.</p>
+  <div class="pull"><b>"If you're not happy, you get your money back. It's that simple."</b><small>The PestLab 90-day promise</small></div>
+  <p>We'll be honest with you: a plug-in isn't a magic wand. If you've got a serious infestation, call a professional.</p>
+  <p>But if you want a simple, chemical-free way to make your home less welcoming to pests, without traps or poison around your family, this is the easiest place to start.</p>
+  <p>Over <strong>140,000 customers</strong> have already tried it, with an average rating of <strong>4.96 out of 5</strong> from 7,428 reviews ⭐</p>
+  <div class="img" style="max-width:260px;margin:6px auto 16px"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/wshgvzdgzhuj.webp?width=600" alt="90-day money-back guarantee" style="aspect-ratio:auto"></div>
+
+  <div class="ship">
+    <h3>🚚 Covering The Whole House?</h3>
+    <p>Order <strong>6 or more devices</strong> and shipping is <strong>free</strong>. One for every room, before your guests arrive.</p>
+  </div>
+
+  <div class="offer">
+    <span class="ribbon">🛡️ BLACK FRIDAY OFFER</span>
+    <img class="pimg" src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=900" alt="PestLab USO ultrasonic pest repeller">
+    <div class="eyebrow">TODAY'S OFFER</div>
+    <div class="big">UP TO 40% OFF + FREE SHIPPING</div>
+    <p>The chemical-free plug-in that's designed to keep pests away, day and night. One per room, up to 300 sq ft each. Free shipping on 6+ devices.</p>
+    <a class="btn block" data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Protect Every Room →</a>
+    <div>
+      <span class="pill">Price: <span>From $18/device</span></span>
+      <span class="pill">No chemicals</span>
+      <span class="pill">Lasts 4–5 years</span>
+    </div>
+    <p class="risk">Try it risk free with our <strong>90 Day Money Back Guarantee!</strong></p>
+    <p class="proof">Rated 4.96/5 From 7,428 Reviews And Trusted By 140,000+ Customers</p>
+  </div>
+
+  <div class="card">
+    <h3>🛡️ The PestLab™ USO Ultrasonic Repeller</h3>
+    <span class="sub">(Plug-in, one per room)</span>
+    <div class="check c1"><i>✓</i>Ultrasonic sound designed to repel mice, rats, roaches, ants, spiders, bed bugs and more</div>
+    <div class="check c2"><i>✓</i>No chemicals, no poisons, no traps</div>
+    <div class="check c3"><i>✓</i>Quiet for humans, made for homes with kids and pets</div>
+    <div class="check c4"><i>✓</i>Covers up to 300 sq ft, runs 24/7</div>
+    <div class="check c5"><i>✓</i>No refills or maintenance, 4–5 year lifespan</div>
+    <div class="check c1"><i>✓</i>Free shipping on 6 or more devices</div>
+    <div class="check c4"><i>✓</i>90-day money-back guarantee. Not happy? Full refund.</div>
+    <a class="btn block" data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Claim Up To 40% Off →</a>
+  </div>
+
+  <p class="closing">Traps catch one mouse. Sprays wear off in a week.<br>This season, plug in something that keeps going, day and night, in every room.</p>
+</main>
+
+<footer>
+  <p>© 2026 PestLab</p>
+  <p><a href="https://pestlab.co/policies/terms-of-service">Terms of Service</a> &nbsp;|&nbsp; <a href="https://pestlab.co/policies/privacy-policy">Privacy Policy</a></p>
+  <small>Advertising disclosure: this page is an advertisement and not a news publication. Customer quotes are from reviews left on pestlab.co; individual experiences vary. Product features and claims are provided by the brand. Ultrasonic devices are not a substitute for professional pest control for an established infestation.</small>
+</footer>
+
+<div class="sticky" id="sticky">
+  <a data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">CHECK AVAILABILITY 👉</a>
+  <small>Lock In Black Friday Pricing</small>
+</div>
+
+<script>
+  // Change this one line to point every button somewhere else.
+  var CTA_URL = "https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2";
+  document.querySelectorAll('[data-cta]').forEach(function(a){ a.href = CTA_URL; });
+  var s = document.getElementById('sticky');
+  addEventListener('scroll', function(){ s.classList.toggle('on', scrollY > 500); }, {passive:true});
+</script>
+</body>
+</html>
