@@ -15,3 +15,6 @@ Three standalone pages for PestLab™ USO, each rebuilt from a reference layout.
 - **Images** load from PestLab's Shopify CDN, so the files work anywhere.
 
 To use on Shopify: create a page template with a Custom Liquid section and paste the file's `<style>`, body markup and `<script>`, or host the HTML file as-is.
+
+## Preview copies
+`preview/` holds self-contained copies of every page with all images embedded, so they show images anywhere (downloaded, in the Claude app, offline). Use the main files (which load images from PestLab's Shopify CDN) for the real site; regenerate the previews after editing a page.
