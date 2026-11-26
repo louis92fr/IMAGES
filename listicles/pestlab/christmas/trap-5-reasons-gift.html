@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5 Reasons a Bug Trap Makes a Great Gift</title>
+<meta name="description" content="A spray-free flying insect trap for the host, the home cook and the friend who hates sprays, and for your own holiday kitchen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fbf7f0; --ink:#111111; --muted:#4a4a4a; --green:#1f4d3a; --red:#b3262e;
+    --gold:#b8955a; --sand:#f3e6d3; --butter:#f3d9a8; --line:#e2d7c2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--cream);color:var(--ink);font-family:Outfit,system-ui,sans-serif;font-size:18px;line-height:1.55;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .hx-wrap{max-width:640px;margin:0 auto;padding-left:20px;padding-right:20px}
+
+  /* Header */
+  .hx-sticky{position:sticky;top:0;z-index:50;background:#fff}
+  .hx-announce{background:var(--green);color:#fff;font-weight:700;font-size:17px;line-height:1.3;text-align:center;padding:10px 12px}
+  .hx-deal{display:inline-block;background:var(--red);color:#fff;border-radius:4px;padding:1px 7px}
+  .hx-ribbon{height:7px;background:repeating-linear-gradient(-45deg,var(--red) 0 7px,#fff 7px 14px)}
+  .hx-sticky__inner{max-width:640px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;background:#fff}
+  .hx-sticky__logo img{height:30px;width:auto}
+  .hx-btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:600;font-size:15px;line-height:18px;border-radius:6px;padding:10px 16px;text-align:center}
+  .hx-btn:hover{background:#9c1f27}
+  .hx-lights{height:14px;border-top:1px solid var(--line);background:#fff;
+    background-image:
+      radial-gradient(circle,var(--red) 3px,transparent 3.5px),
+      radial-gradient(circle,var(--green) 3px,transparent 3.5px),
+      radial-gradient(circle,var(--gold) 3px,transparent 3.5px);
+    background-size:75px 14px,75px 14px,75px 14px;
+    background-position:6px 0,31px 0,56px 0;background-repeat:repeat-x}
+
+  /* Hero */
+  .hx-hero-band{position:relative;overflow:hidden;
+    background-image:
+      radial-gradient(circle,rgba(184,149,90,.35) 1.6px,transparent 2px),
+      radial-gradient(circle,rgba(31,77,58,.18) 1.6px,transparent 2px);
+    background-size:97px 113px,131px 89px;background-position:3px 40px,60px 10px}
+  .hx-hero{text-align:center;padding-top:36px;padding-bottom:30px;border-bottom:1px dashed var(--line)}
+  .hx-hero h1{font-size:30px;line-height:1.15;font-weight:700;letter-spacing:-.3px}
+  .hx-pf{color:var(--green)}
+  .hx-gift{color:var(--red)}
+  .hx-hero__sub{font-size:19px;line-height:1.55;color:var(--muted);margin-top:18px}
+  .hx-stars{display:inline-block;font-size:16px;line-height:1.55;color:var(--muted);margin-top:16px}
+  .hx-stars b{color:var(--gold);letter-spacing:4px;font-size:19px;margin-right:6px;font-weight:400}
+  .hx-for{font-size:16px;line-height:1.5;margin-top:16px}
+  .hx-for b{display:block;color:var(--green);font-weight:600;margin-bottom:4px}
+  .hx-for span{display:inline-block;margin:0 8px 4px}
+
+  /* Reasons */
+  .hx-reason{padding:32px 0 34px;border-bottom:1px dashed var(--line)}
+  .hx-reason:last-child{border-bottom:0}
+  .hx-reason h2{display:flex;align-items:center;gap:14px;font-size:25px;line-height:30px;font-weight:700}
+  .hx-num{position:relative;flex:0 0 42px;width:42px;height:42px;border-radius:50%;color:#fff;font-size:19px;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(circle at 35% 30%,#e0505a 0,var(--red) 55%,#7e1820 100%);box-shadow:0 2px 4px rgba(0,0,0,.18)}
+  .hx-num::before{content:"";position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:12px;height:9px;border-radius:2px;background:var(--gold)}
+  .hx-reason:nth-child(even) .hx-num{background:radial-gradient(circle at 35% 30%,#3f8466 0,var(--green) 55%,#123326 100%)}
+  .hx-reason__media{margin-top:24px;border-radius:12px;overflow:hidden;background:#fff}
+  .hx-reason__media img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+  .hx-reason__body{margin-top:22px}
+  .hx-reason__body p{font-size:20px;line-height:1.5;margin-bottom:14px}
+  .hx-steps{list-style:none;counter-reset:s;margin-bottom:14px}
+  .hx-steps li{counter-increment:s;position:relative;padding-left:40px;font-size:20px;line-height:1.5;margin-bottom:14px}
+  .hx-steps li::before{content:counter(s);position:absolute;left:0;top:3px;width:24px;height:24px;border-radius:50%;background:var(--sand);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .hx-quote{background:#fff;border-left:4px solid var(--green);border-radius:6px 12px 12px 6px;padding:14px 16px;margin-bottom:14px}
+  .hx-reason__body .hx-quote p{font-size:18px;line-height:1.5;margin-bottom:6px;font-style:italic}
+  .hx-reason__body .hx-quote cite{font-style:normal;font-size:15px;color:var(--muted);font-weight:600}
+  .hx-reason__body p.hx-giftnote{position:relative;background:#fff;border:1px dashed var(--red);border-radius:6px 18px 18px 6px;padding:12px 16px 12px 22px;font-size:17px;line-height:1.45;margin-bottom:0}
+  .hx-giftnote::before{content:"";position:absolute;left:8px;top:50%;width:5px;height:5px;margin-top:-2px;border-radius:50%;background:var(--red)}
+  .hx-giftnote b{color:var(--red);font-weight:600}
+
+  /* Offer */
+  .hx-offer{background:var(--green);color:#fff;border-top:10px solid var(--red);padding:52px 0 48px;text-align:center}
+  .hx-offer__bow{font-size:40px;line-height:1}
+  .hx-offer h2{font-size:28px;line-height:1.15;font-weight:700;margin-top:10px}
+  .hx-offer__sub{font-size:21px;line-height:1.55;font-weight:600;color:var(--butter);margin-top:10px}
+  .hx-offer .hx-stars{color:#e8e2d6;margin-top:10px}
+  .hx-cards{position:relative;margin-top:14px;padding-top:16px}
+  .hx-cards::before{content:"";position:absolute;left:50%;top:0;bottom:-48px;width:18px;margin-left:-9px;background:var(--red)}
+  .hx-card{position:relative;background:var(--cream);color:var(--ink);border-radius:12px;padding:20px 18px 18px;margin-bottom:18px}
+  .hx-card:last-child{margin-bottom:0}
+  .hx-card__tag{display:inline-block;background:var(--sand);color:var(--green);font-size:14px;font-weight:600;border-radius:4px 14px 14px 4px;padding:4px 12px}
+  .hx-card img{width:280px;max-width:100%;aspect-ratio:1/1;object-fit:cover;margin:10px auto 0;border-radius:8px;background:#fff}
+  .hx-card h3{font-size:20px;line-height:1.55;font-weight:700;margin-top:16px}
+  .hx-card__feature{font-size:16px;color:var(--muted);margin-top:6px}
+  .hx-price{font-size:26px;line-height:1.55;font-weight:700;margin-top:8px}
+  .hx-price s{font-size:17px;font-weight:400;color:var(--muted);margin-right:8px}
+  .hx-price small{font-size:15px;font-weight:500;color:var(--muted)}
+  .hx-save{display:inline-block;background:var(--red);color:#fff;font-size:14px;font-weight:600;border-radius:4px;padding:2px 10px;margin-top:4px}
+  .hx-perks{list-style:none;text-align:left;margin:14px 0 18px}
+  .hx-perks li{position:relative;padding-left:24px;font-size:15px;line-height:1.55;margin-bottom:6px}
+  .hx-perks li::before{content:"";position:absolute;left:4px;top:6px;width:9px;height:5px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
+  .hx-card .hx-btn{display:block;width:100%;font-size:16px;line-height:19px;padding:12px 20px}
+
+  /* Footer */
+  .hx-footer{padding-top:28px;padding-bottom:36px;text-align:center;font-size:14px;color:var(--muted)}
+  .hx-signoff{font-size:16px;font-weight:600;color:var(--green);margin-bottom:10px}
+  .hx-footer p{margin-bottom:8px}
+  .hx-footer a{color:var(--muted)}
+  .hx-disclosure{font-size:12px;line-height:1.55;text-align:left;margin-top:14px;color:#6b6b6b}
+
+  @media (min-width:700px){
+    .hx-hero h1{font-size:40px}
+    .hx-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .hx-cards::before{bottom:auto;height:16px}
+    .hx-card{margin-bottom:0}
+    .hx-wrap.hx-offer-wrap{max-width:760px}
+  }
+</style>
+</head>
+<body>
+<div class="hx-page">
+  <header class="hx-sticky">
+    <div class="hx-announce">🎄 Holiday sale: free shipping on 6+ devices + <span class="hx-deal">up to 55% off</span></div>
+    <div class="hx-ribbon" aria-hidden="true"></div>
+    <div class="hx-sticky__inner">
+      <span class="hx-sticky__logo"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bleu_8f4abece-f22d-44db-9a12-0278bf983be6.png?width=300" alt="PestLab" width="109" height="30"></span>
+      <a class="hx-btn" data-cta href="https://pestlab.co/products/flying-insect-trap">Shop gifts →</a>
+    </div>
+    <div class="hx-lights" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <div class="hx-hero-band">
+      <section class="hx-hero hx-wrap">
+        <h1>5 Reasons a <span class="hx-pf">Spray-Free</span> Bug Trap Is the <span class="hx-gift">Gift</span> Every Holiday Home&nbsp;Needs</h1>
+        <p class="hx-hero__sub">It plugs into the wall, glows soft UV light, and quietly catches fruit flies and gnats on a hidden sticky card. No sprays, no smell, no zapping. See why 114,000+ customers trust&nbsp;PestLab.</p>
+        <div class="hx-stars"><b>★★★★★</b> 4.89 out of 5 rating</div>
+        <p class="hx-for"><b>Perfect for</b> <span>🏡 holiday hosts</span><span>🍪 home bakers</span><span>🌿 plant lovers</span><span>🚫 spray haters</span></p>
+      </section>
+    </div>
+
+    <section class="hx-reasons hx-wrap">
+      <article class="hx-reason">
+        <h2><span class="hx-num">1</span><span>🌿 No sprays, no smell, no zapping</span></h2>
+        <div class="hx-reason__media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Device_at_the_middle_2K_202608031418.jpg?width=900" alt="How the trap works: UV light attracts, insects fly in, a hidden sticky card holds them" loading="lazy"></div>
+        <div class="hx-reason__body">
+          <p>Holiday kitchens are full of food, and the last thing anyone wants is bug spray drifting over the cookies.</p>
+          <p>The PestLab trap works without it. A soft UV light attracts flying insects toward it, and a hidden sticky cartridge catches them. No insecticide, no odor, no zapping sounds.</p>
+          <p class="hx-giftnote"><b>🎁 Gift idea:</b> for the friend who hates sprays, this is the bug fix they'll actually plug in.</p>
+        </div>
+      </article>
+
+      <article class="hx-reason">
+        <h2><span class="hx-num">2</span><span>🍎 Made for a kitchen full of holiday food</span></h2>
+        <div class="hx-reason__media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Device_at_the_middle_2K_202608031417.jpg?width=900" alt="What it captures: house flies, fruit flies, gnats, mosquitoes, moths, drain flies" loading="lazy"></div>
+        <div class="hx-reason__body">
+          <ol class="hx-steps">
+            <li>Fruit bowls, cider and open wine bring fruit flies. Plug one in near the counter.</li>
+            <li>Weeks of baking mean busy trash bins. It attracts and traps the flies they draw in.</li>
+            <li>Sinks working overtime can stir up drain flies. Set one near the drain too.</li>
+          </ol>
+          <p class="hx-giftnote"><b>🎁 Gift idea:</b> for the home cook on your list, it's one less thing buzzing around the pie.</p>
+        </div>
+      </article>
+
+      <article class="hx-reason">
+        <h2><span class="hx-num">3</span><span>⭐ “Finally gave me my kitchen back”</span></h2>
+        <div class="hx-reason__media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Woman_frustrated_by_insects__fam__202607221212.jpg?width=900" alt="Problem: flies in the kitchen. Solution: the trap on the wall while the family eats" loading="lazy"></div>
+        <div class="hx-reason__body">
+          <div class="hx-quote">
+            <p>“I was constantly seeing fruit flies around my kitchen no matter how much I cleaned. Within the first few days, the PestLab Flying Insect Trap had already caught dozens of them… It's quiet, easy to use, and finally gave me my kitchen back”</p>
+            <cite>Christina Johnson, New York</cite>
+          </div>
+          <p class="hx-giftnote"><b>🎁 Gift idea:</b> the kind of present they'll thank you for every time they cook.</p>
+        </div>
+      </article>
+
+      <article class="hx-reason">
+        <h2><span class="hx-num">4</span><span>🎄 Poinsettias, plants and guests in and out</span></h2>
+        <div class="hx-reason__media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Create_a_premium_infographic_showing_202606200036.jpg?width=900" alt="Protection throughout your home: kitchen, bedroom, living room, bathroom, office" loading="lazy"></div>
+        <div class="hx-reason__body">
+          <p>New poinsettias and houseplants can bring fungus gnats with them. And with guests coming and going, the door is open more than usual.</p>
+          <p>Plug one in by the plants and one by the entry. It runs day and night, so it keeps catching while you're busy hosting. One per room works best.</p>
+          <p class="hx-giftnote"><b>🎁 Gift idea:</b> bring one instead of another candle. The host will be using it long after New Year's.</p>
+        </div>
+      </article>
+
+      <article class="hx-reason">
+        <h2><span class="hx-num">5</span><span>🎁 A gift that comes ready to go</span></h2>
+        <div class="hx-reason__media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Create_a_premium_product_infographic._202606200034.jpg?width=900" alt="Silent 24/7 protection, the trap glowing softly in a bedroom at night" loading="lazy"></div>
+        <div class="hx-reason__body">
+          <p>Every device comes with refill cartridges in the box, so there's nothing extra to buy. Swap the card every 30–45 days, or when it's full. Setup takes under a minute.</p>
+          <p>It's quiet enough for a bedroom and made for homes with kids and pets when used as directed. It isn't a magic wand for a big infestation, but for the everyday flying bugs it's an easy win.</p>
+          <p class="hx-giftnote"><b>🎁 Gift idea:</b> easy to give and easy to keep, with refills included and a 90-day money-back guarantee.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="hx-offer" id="offer">
+      <div class="hx-wrap hx-offer-wrap">
+        <div class="hx-offer__bow" aria-hidden="true">🎀</div>
+        <h2>Give a Bug-Free Kitchen This&nbsp;Holiday</h2>
+        <p class="hx-offer__sub">Up to 55% off + free shipping on 6+ devices</p>
+        <div class="hx-stars"><b>★★★★★</b> 4.89 out of 5 rating</div>
+        <div class="hx-cards">
+          <div class="hx-card">
+            <span class="hx-card__tag">🏡 For the whole house</span>
+            <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Happy_family_with_dog_2K_202608031420.jpg?width=600" alt="Family and dog at home with the trap glowing on the wall" loading="lazy">
+            <h3>6 Devices + 24 Refills</h3>
+            <p class="hx-card__feature">Kitchen, plants, drains, entry and more</p>
+            <p class="hx-price"><s>$179.94</s>$94.50</p>
+            <p class="hx-card__feature" style="margin-top:0">$15.75 per device</p>
+            <div><span class="hx-save">Save 47%</span></div>
+            <ul class="hx-perks">
+              <li>Free shipping</li>
+              <li>24 refill cartridges included</li>
+              <li>Optional auto-refills: save 25%, no commitment</li>
+              <li>90-day money-back guarantee</li>
+            </ul>
+            <a class="hx-btn" data-cta href="https://pestlab.co/products/flying-insect-trap">🎁 Get the 6-pack →</a>
+          </div>
+          <div class="hx-card">
+            <span class="hx-card__tag">🥂 For the host</span>
+            <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/011_54b1572c-dd17-44e1-8a25-46b53d756598.jpg?width=600" alt="PestLab Flying Insect Trap next to its box with 4 free refills" loading="lazy">
+            <h3>1 Device + 4 Refills</h3>
+            <p class="hx-card__feature">A thoughtful hostess gift</p>
+            <p class="hx-price"><s>$29.99</s>$22.49</p>
+            <div><span class="hx-save">Save 25%</span></div>
+            <ul class="hx-perks">
+              <li>4 refill cartridges included</li>
+              <li>Plugs into a standard US outlet</li>
+              <li>No sprays, no smell, no zapping</li>
+              <li>90-day money-back guarantee</li>
+            </ul>
+            <a class="hx-btn" data-cta href="https://pestlab.co/products/flying-insect-trap">🎁 Gift one trap →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hx-footer hx-wrap">
+    <p class="hx-signoff">Happy holidays from all of us at PestLab 🎄</p>
+    <p>© 2026 PestLab · <a href="https://pestlab.co/policies/terms-of-service">Terms</a> · <a href="https://pestlab.co/policies/privacy-policy">Privacy</a></p>
+    <p class="hx-disclosure">Advertising disclosure: this page is an advertisement. Customer quotes are from reviews left on pestlab.co; individual experiences vary. Product features and claims are provided by the brand. Prices shown are the brand's current bundle prices and may change.</p>
+  </footer>
+</div>
+<script>
+  // Change this one line to point every button somewhere else.
+  var CTA_URL = "https://pestlab.co/products/flying-insect-trap";
+  document.querySelectorAll("[data-cta]").forEach(function (a) { a.href = CTA_URL; });
+</script>
+</body>
+</html>
