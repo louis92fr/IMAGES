@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PestLab Christmas Gift</title>
+<meta name="description" content="Winter is when mice move indoors. Five reasons the PestLab USO ultrasonic repeller is the gift that keeps the house quiet this Christmas. Black Friday: up to 40% off, free shipping on 6+.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F2EEE4; --card:#FFFFFF; --muted:#EAE5DB; --border:#D4C4B0;
+    --fg:#0A0907; --mfg:#66625C; --primary:#4A3F35;
+    --accent:#C86F4C; --gold:#DDA15E; --cream:#F4EFE3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:'Geist',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;font-size:16px;line-height:24px;color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:512px;margin:0 auto;padding-left:16px;padding-right:16px}
+
+  /* top promo bar */
+  .promo{background:linear-gradient(90deg,#000 0%,#17120a 50%,#4a3208 100%);color:#FBF6EC;border-bottom:1px solid rgba(242,181,58,.35)}
+  .promo-in{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .promo-txt{font:600 13px/1.3 ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.04em;text-align:left;min-width:0}
+  .promo-txt b{font-weight:800;letter-spacing:.06em;color:#F2B53A}
+  .promo-txt i{font-style:normal;opacity:.6;margin:0 10px}
+  .clock{flex:none;display:inline-flex;align-items:flex-start;gap:4px}
+  .clock em{font-style:normal;font-weight:700;line-height:26px;opacity:.8}
+  .u{display:inline-flex;flex-direction:column;align-items:center}
+  .u b{background:rgba(242,181,58,.14);border:1px solid rgba(242,181,58,.45);border-radius:4px;min-width:32px;padding:3px 4px;text-align:center;font:700 15px/1.2 ui-sans-serif,system-ui,-apple-system,Arial,sans-serif;font-variant-numeric:tabular-nums;color:#FBF6EC}
+  .u small{font-size:8px;letter-spacing:.1em;opacity:.75;margin-top:2px}
+  @media (max-width:749px){
+    .promo-in{gap:8px;padding:8px 10px}
+    .promo-txt{flex:1 1 auto;text-align:center;font-size:10px;letter-spacing:0;white-space:nowrap}
+    .promo-txt b{display:block;font-size:12px;margin-bottom:2px}
+    .promo-txt i{display:none}
+    .promo-sub{display:block}
+    .clock{gap:3px}
+    .u b{min-width:23px;font-size:11px;padding:3px 2px}
+    .clock em{line-height:22px}
+    .u small{font-size:7px}
+  }
+
+  header.top{background:var(--card);padding:12px 16px;display:flex;justify-content:center;align-items:center}
+  header.top img{height:28px;width:auto}
+  @media (min-width:768px){header.top img{height:40px}}
+
+  /* hero */
+  .hero{padding-top:32px;padding-bottom:32px}
+  .hero-img{position:relative;width:100%;aspect-ratio:1/1;border-radius:16px;overflow:hidden;background:var(--muted);box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+  .hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .center{text-align:center}
+  .save-pill{display:inline-block;background:rgba(221,161,94,.2);border-radius:6px;padding:8px 16px;font-weight:700;font-size:14px;line-height:20px;margin-top:20px}
+  h1{font-size:32px;line-height:40px;font-weight:700;letter-spacing:-.8px;margin-top:20px;text-wrap:balance}
+  @media (min-width:768px){h1{font-size:42px;line-height:1.25}}
+  .hl{color:var(--accent)}
+  .intro{font-size:18px;line-height:29.25px;color:var(--mfg);margin:16px auto 0;max-width:448px;text-wrap:pretty}
+  .btn-main{display:flex;align-items:center;justify-content:center;width:100%;margin-top:32px;background:var(--accent);color:#fff;font-weight:700;font-size:18px;line-height:28px;padding:14px 24px;min-height:56px;border-radius:8px;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);text-align:center;transition:box-shadow .2s,background .2s}
+  .btn-main:hover{background:rgba(200,111,76,.9);box-shadow:0 20px 25px -5px rgba(0,0,0,.12)}
+  .trust{margin-top:16px;text-align:center;font-size:14px;line-height:20px;font-weight:500}
+
+  /* reason cards */
+  .reasons{padding-top:48px;padding-bottom:48px}
+  .reasons > * + *{margin-top:40px}
+  .card{background:var(--card);border-radius:16px;padding:32px;border:1px solid var(--border);box-shadow:0 1px 2px rgba(0,0,0,.05)}
+  .card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+  .kicker{font-size:12px;line-height:16px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#2a241d;padding:2px 8px;white-space:nowrap}
+  .num{font-size:12px;font-weight:700;color:var(--mfg)}
+  .card h3{font-size:30px;line-height:37.5px;font-weight:700;margin-bottom:24px;text-wrap:balance}
+  @media (min-width:768px){.card h3{font-size:36px;line-height:1.25}}
+  .card-img{width:100%;border-radius:8px;overflow:hidden;background:var(--muted);margin-bottom:24px;box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1)}
+  .card-img img{width:100%;height:auto}
+  .card-img.sq img{aspect-ratio:1/1;object-fit:cover}
+  .card p.body{font-size:16px;line-height:26px;color:rgba(10,9,7,.8);text-wrap:pretty}
+  .card p.body strong{font-weight:700;color:var(--fg)}
+  blockquote{margin-top:20px;border-left:4px solid var(--gold);background:var(--cream);border-radius:0 8px 8px 0;padding:12px 16px}
+  blockquote p{font-size:14px;line-height:22.75px;font-style:italic;color:rgba(10,9,7,.85)}
+  blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:12px;line-height:16px;font-weight:700}
+
+  /* offer */
+  .offer-sec{padding-top:48px;padding-bottom:16px}
+  .badge-pill{display:inline-block;font-size:12px;line-height:16px;font-weight:700;color:#4A3F35;background:var(--cream);border:1px solid var(--border);border-radius:6px;padding:6px 16px;margin-bottom:16px}
+  h2{font-size:30px;line-height:37.5px;font-weight:700;text-wrap:balance}
+  @media (min-width:768px){h2{font-size:36px;line-height:1.25}}
+  .offer-sec h2{margin-bottom:16px}
+  .offer-lead{font-size:18px;line-height:29.25px;color:var(--mfg);max-width:448px;margin:0 auto 24px;text-wrap:pretty}
+  .offer-head-wrap{margin-bottom:32px}
+  .offer{background:var(--card);border:2px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+  .offer-bar{background:linear-gradient(90deg,var(--primary),rgba(74,63,53,.9));color:#F6F3EA;text-align:center;padding:12px 16px}
+  .offer-bar p{font-size:14px;line-height:20px;font-weight:700;letter-spacing:.35px;text-transform:uppercase}
+  .offer-body{padding:20px}
+  .gal-main{width:100%;aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:16px}
+  .gal-main img{width:100%;height:100%;object-fit:contain}
+  .thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-bottom:20px}
+  .thumbs button{aspect-ratio:1/1;border-radius:6px;border:2px solid var(--border);background:var(--muted);overflow:hidden;cursor:pointer;padding:0}
+  .thumbs button.on,.thumbs button:hover{border-color:var(--primary)}
+  .thumbs img{width:100%;height:100%;object-fit:cover}
+  .tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+  .tile{background:var(--cream);border-radius:8px;padding:14px;display:flex;align-items:flex-start;gap:10px}
+  .tile svg{flex:none;width:20px;height:20px;color:var(--accent);margin-top:1px}
+  .tile p{font-size:12px;line-height:16.5px;font-weight:600}
+  .btn-outline{display:flex;align-items:center;justify-content:center;width:100%;border:2px solid var(--fg);border-radius:8px;padding:14px 24px;min-height:52px;font-size:14px;line-height:20px;font-weight:700;background:transparent;transition:background .2s}
+  .btn-outline:hover{background:var(--cream)}
+
+  /* reviews */
+  .reviews{padding-top:48px;padding-bottom:48px}
+  .reviews .head{text-align:center;margin-bottom:32px}
+  .reviews .head h2{margin-bottom:8px}
+  .reviews .head p{font-size:14px;line-height:20px;color:var(--mfg)}
+  .stars{display:inline-flex;gap:2px;vertical-align:-2px;margin-right:4px}
+  .stars svg{width:14px;height:14px;fill:#F5A70A}
+  .rv{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px}
+  .rv + .rv{margin-top:16px}
+  .rv-title{font-size:14px;line-height:20px;font-weight:700;margin-bottom:8px}
+  .rv-text{font-size:14px;line-height:22.75px;color:rgba(10,9,7,.75);margin-bottom:12px}
+  .rv-name{display:inline-block;font-size:10px;line-height:15px;letter-spacing:.5px;text-transform:uppercase;font-weight:700;color:var(--accent);background:rgba(200,111,76,.1);padding:2px 8px;border-radius:4px}
+
+  /* faq */
+  .faq{padding-top:32px;padding-bottom:64px}
+  .faq .head{text-align:center;margin-bottom:40px}
+  .faq .head h2{margin-bottom:16px}
+  .faq .head p{color:var(--mfg);max-width:448px;margin:0 auto}
+  .qa{background:var(--card);border:2px solid var(--border);border-radius:8px;padding:0 24px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+  .qa + .qa{margin-top:16px}
+  .qa button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:0;padding:20px 0;font:700 14px/20px 'Geist',ui-sans-serif,system-ui,sans-serif;color:var(--fg);text-align:left;cursor:pointer}
+  .qa button svg{flex:none;width:16px;height:16px;color:var(--mfg);transition:transform .2s}
+  .qa.open button svg{transform:rotate(180deg)}
+  .qa .ans{display:none;padding-bottom:20px;font-size:14px;line-height:22px;color:rgba(10,9,7,.8)}
+  .qa.open .ans{display:block}
+
+  /* footer */
+  footer{border-top:1px solid var(--border);padding:32px 0 160px;text-align:center;font-size:12px;line-height:18px;color:var(--mfg)}
+  footer img{height:22px;width:auto;margin:0 auto 14px}
+  footer .links{margin:10px 0 14px}
+  footer .links a{text-decoration:underline;margin:0 8px}
+  footer p + p{margin-top:8px}
+
+  /* sticky bar */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(74,63,53,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:2px solid #4A3F35;padding:16px;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);transform:translateY(110%);transition:transform .3s ease}
+  .sticky.show{transform:translateY(0)}
+  .sticky .btn-main{margin-top:0;margin-bottom:12px;min-height:52px;padding:12px 20px;border-radius:8px}
+  .sticky p{text-align:center;font-size:12px;line-height:16px;font-weight:600;color:rgba(255,255,255,.8)}
+</style>
+</head>
+<body>
+
+<div class="promo" role="region" aria-label="Sale">
+  <div class="promo-in">
+    <span class="promo-txt"><b>BLACK FRIDAY SALE</b><i>|</i><span class="promo-sub">UP TO 40% OFF + FREE SHIPPING ON 6+</span></span>
+    <span class="clock" id="clock" aria-label="Time left in the sale">
+      <span class="u"><b data-t="d">00</b><small>DAYS</small></span><em>:</em>
+      <span class="u"><b data-t="h">00</b><small>HRS</small></span><em>:</em>
+      <span class="u"><b data-t="m">00</b><small>MIN</small></span><em>:</em>
+      <span class="u"><b data-t="s">00</b><small>SEC</small></span>
+    </span>
+  </div>
+</div>
+
+<header class="top">
+  <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bleu_8f4abece-f22d-44db-9a12-0278bf983be6.png?width=300" alt="PestLab">
+</header>
+
+<section class="wrap hero">
+  <div class="hero-img">
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Lois_Pest_Lab_Stills_3_2.jpg?width=900" alt="A grandmother holding a PestLab USO repeller with gift boxes on the table" fetchpriority="high">
+  </div>
+  <div class="center"><span class="save-pill">Up to 40% off + free shipping on 6+</span></div>
+  <div class="center">
+    <h1>5 Reasons The PestLab USO Is The <span class="hl">Perfect Gift</span> For The Home That <span class="hl">Hears Mice At Night</span></h1>
+    <p class="intro">Every winter it's the same. It gets cold, and mice go looking for a warm way in: a pantry full of baking supplies, a garage full of wrapped gifts, attic boxes of decorations. Here are five reasons this little plug-in is the gift that keeps the house quiet this Christmas, for you or for Mom and Dad.</p>
+  </div>
+  <a class="btn-main" data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Protect The Home, Up To 40% Off</a>
+  <p class="trust">90-day money-back · Free shipping on 6+ · No poison, no traps</p>
+</section>
+
+<section class="wrap reasons">
+
+  <article class="card">
+    <div class="card-top"><span class="kicker">Warm-and-quiet</span><span class="num">01</span></div>
+    <h3>Stop the scratching in the walls before the guests arrive</h3>
+    <div class="card-img"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/WhatsApp_Image_2024-07-27_at_11.24.26_5.jpg?width=900" alt="A PestLab USO repeller sending ultrasonic waves across a kitchen" loading="lazy"></div>
+    <p class="body">The first cold snap hits and the house gets a new sound: scratching in the walls at 2am. Mice want warmth and food, and your home has both. The PestLab USO plugs into an outlet and sends out high-frequency sound designed to make that space uncomfortable for them, so they look elsewhere. You can't hear it. <strong>The house gets quiet again, right when the family shows up.</strong></p>
+    <blockquote><p>“They are so silent I keep checking to see if they're still plugged in.”</p><cite>Derek J</cite></blockquote>
+  </article>
+
+  <article class="card">
+    <div class="card-top"><span class="kicker">Holiday pantry</span><span class="num">02</span></div>
+    <h3>Keep the baking supplies for the cookies, not the mice</h3>
+    <div class="card-img sq"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/WhatsApp_Image_2024-07-27_at_11.24.26_4.jpg?width=900" alt="A PestLab USO repeller plugged into a kitchen backsplash outlet" loading="lazy"></div>
+    <p class="body">December is when the pantry is fullest: flour, sugar, nuts, chocolate chips, the good stuff for Christmas cookies. That's exactly what a hungry mouse is after. Snap traps by the counter and poison under the sink aren't what you want next to the food, or the kids and the dog. <strong>No chemicals, no poison, no traps. Just plug it in by the kitchen.</strong></p>
+    <blockquote><p>“No more harmful chemicals around my kids and dog.”</p><cite>Amanda, Oklahoma</cite></blockquote>
+  </article>
+
+  <article class="card">
+    <div class="card-top"><span class="kicker">No-bending</span><span class="num">03</span></div>
+    <h3>Give Mom and Dad a break from setting traps</h3>
+    <div class="card-img sq"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Capture_d_ecran_2024-11-10_a_13.30.39_1.png?width=900" alt="An older man holding a PestLab USO repeller" loading="lazy" style="object-position:center 25%"></div>
+    <p class="body">If your parents or grandparents are still crouching behind the fridge to set and empty traps, this is the gift. There's nothing to bait, nothing to check, nothing to refill. They plug it in and it runs day and night for years. It's small enough to fit in a stocking. <strong>One less winter chore for the people who raised you.</strong></p>
+    <blockquote><p>“With my arthritis, I couldn't keep bending down to set and check traps. The PestLab system was completely hands-off for me, just plug in and forget.”</p><cite>Walter G</cite></blockquote>
+  </article>
+
+  <article class="card">
+    <div class="card-top"><span class="kicker">One per room</span><span class="num">04</span></div>
+    <h3>Cover the garage, attic and basement where the gifts are hiding</h3>
+    <div class="card-img"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/4_0ca9f2e0-4cc6-403a-b9a7-3e5133d21efa.jpg?width=900" alt="Infographic of a house showing a PestLab repeller in every room" loading="lazy"></div>
+    <p class="body">The places mice love most are the ones you visit least: the garage with the wrapped presents, the attic with the ornament boxes, the basement storage. Ultrasonic sound doesn't pass through walls, so it's one device per room, each covering up to 300 sq ft. That's why a bundle makes sense. <strong>It isn't a magic wand, but it's a simple first line of defence.</strong></p>
+    <blockquote><p>“I placed one device in each room and around our kitchen… I just ordered six more devices for my mom.”</p><cite>Maria T</cite></blockquote>
+  </article>
+
+  <article class="card">
+    <div class="card-top"><span class="kicker">Black Friday</span><span class="num">05</span></div>
+    <h3>Get it now with up to 40% off and 90 days to decide</h3>
+    <div class="card-img sq"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=900" alt="The PestLab USO repeller with a 90-day guarantee badge" loading="lazy"></div>
+    <p class="body">The Black Friday sale is live now. One device is $29.99, and the more rooms you cover the less each one costs: $24 each in a 6-pack and $18 each in a 9-pack, which is 40% off. Six or more ship free. A gift should be a sure thing, so there's a 90-day money-back guarantee. <strong>Order early and it's ready to wrap for Christmas.</strong></p>
+  </article>
+
+</section>
+
+<section class="wrap offer-sec">
+  <div class="center offer-head-wrap">
+    <span class="badge-pill">90-Day Money-Back + Free Shipping On 6+</span>
+    <h2>The Gift That Keeps The House Quiet All Winter</h2>
+    <p class="offer-lead">The PestLab USO ultrasonic repeller. One per room, plug it in, and it runs day and night with nothing to refill. Black Friday pricing is live now.</p>
+  </div>
+  <div class="offer">
+    <div class="offer-bar"><p>Black Friday: Up To 40% Off</p></div>
+    <div class="offer-body">
+      <div class="gal-main"><img id="galMain" src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=900" alt="The PestLab USO repeller" loading="lazy"></div>
+      <div class="thumbs" id="thumbs">
+        <button type="button" class="on" aria-label="Show the PestLab USO repeller" data-src="bb_main.png"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=160" alt="" loading="lazy"></button>
+        <button type="button" aria-label="Show what it protects from" data-src="3.jpg"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/3.jpg?width=160" alt="" loading="lazy"></button>
+        <button type="button" aria-label="Show where it works" data-src="4_0ca9f2e0-4cc6-403a-b9a7-3e5133d21efa.jpg"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/4_0ca9f2e0-4cc6-403a-b9a7-3e5133d21efa.jpg?width=160" alt="" loading="lazy"></button>
+        <button type="button" aria-label="Show coverage up to 300 sq ft" data-src="1.jpg"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/1.jpg?width=160" alt="" loading="lazy"></button>
+        <button type="button" aria-label="Show the device in a kitchen outlet" data-src="WhatsApp_Image_2024-07-27_at_11.24.26_4.jpg"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/WhatsApp_Image_2024-07-27_at_11.24.26_4.jpg?width=160" alt="" loading="lazy"></button>
+      </div>
+      <div class="tiles">
+        <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><p>No poison, no traps</p></div>
+        <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></svg><p>One per room, up to 300 sq ft</p></div>
+        <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><p>Runs day and night</p></div>
+        <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><p>4–5 year lifespan</p></div>
+      </div>
+      <a class="btn-outline" data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">See Full Product Details</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap reviews">
+  <div class="head">
+    <h2>What Buyers Are Saying</h2>
+    <p><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></svg></span>4.96/5 from 7,428 reviews. In their own words, from pestlab.co.</p>
+  </div>
+  <div class="rv">
+    <p class="rv-title">“Should have done it sooner!”</p>
+    <p class="rv-text">Living on a fixed retirement income meant I needed to be careful about expenses, but after battling mice for months with cheap store traps, I finally ordered these PestLab repellers. Should have done it sooner! … The price was actually reasonable considering the peace of mind.</p>
+    <span class="rv-name">Walter G</span>
+  </div>
+  <div class="rv">
+    <p class="rv-title">“I just ordered six more devices for my mom.”</p>
+    <p class="rv-text">I needed something effective yet safe for my kids and my puppy. … My dog used to bark at the walls constantly, but stopped within days of installing these devices. The silent operation means we don't even notice they're working. I'm so grateful to finally prepare meals without worrying about rodents!</p>
+    <span class="rv-name">Maria T</span>
+  </div>
+  <div class="rv">
+    <p class="rv-title">“PestLab devices work great!”</p>
+    <p class="rv-text">They are so silent I keep checking to see if they're still plugged in. Paranoia is exhausting.</p>
+    <span class="rv-name">Derek J</span>
+  </div>
+</section>
+
+<section class="wrap faq">
+  <div class="head">
+    <h2>Gift Questions</h2>
+    <p>Everything you need to know before you wrap it.</p>
+  </div>
+  <div class="qa"><button type="button" aria-expanded="false">Will they actually use it?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="ans">There's nothing to learn. They plug it into a standard US outlet and leave it. It runs day and night, needs no refills and has an advertised lifespan of 4–5 years, so it keeps working long after the wrapping paper is gone.</div></div>
+  <div class="qa"><button type="button" aria-expanded="false">Does it work on mice?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="ans">It's designed to repel mice and rats (plus roaches, spiders, ants and other pests) with high-frequency sound that encourages them to leave. It isn't a magic wand: for an established infestation, call a professional. Think of it as a simple, hands-off first line of defence.</div></div>
+  <div class="qa"><button type="button" aria-expanded="false">Is it okay around kids and pets?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="ans">It uses no chemicals, poisons or traps, and it's made for homes with kids and pets. It's quiet for people, so nobody in the house notices it running.</div></div>
+  <div class="qa"><button type="button" aria-expanded="false">How many do they need?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="ans">One per room. The sound doesn't pass through walls, and each device covers up to 300 sq ft. Count the kitchen, the garage, the basement and any room where they've heard scratching. That's why bundles make sense, and 6+ ship free.</div></div>
+  <div class="qa"><button type="button" aria-expanded="false">What if it isn't right for them?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="ans">Every order comes with a 90-day money-back guarantee, so there's plenty of time after Christmas to try it.</div></div>
+  <div class="qa"><button type="button" aria-expanded="false">How long is the sale on?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="ans">The Black Friday pricing (up to 40% off, free shipping on 6+) runs until the timer at the top of the page hits zero, on <span id="saleEndTxt">November 30</span>.</div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bleu_8f4abece-f22d-44db-9a12-0278bf983be6.png?width=200" alt="PestLab">
+    <p>© 2026 PestLab. All rights reserved.</p>
+    <div class="links"><a href="https://pestlab.co/policies/terms-of-service">Terms of Service</a><a href="https://pestlab.co/policies/privacy-policy">Privacy Policy</a></div>
+    <p>Advertising disclosure: this page is an advertisement. Customer quotes are from reviews left on pestlab.co; individual experiences vary. Product features and claims are provided by the brand.</p>
+    <p>Ultrasonic devices are not a substitute for professional pest control for an established infestation.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div style="max-width:512px;margin:0 auto">
+    <a class="btn-main" data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Get Up To 40% Off This Christmas</a>
+    <p>Black Friday · 90-Day Money-Back · Free Shipping On 6+</p>
+  </div>
+</div>
+
+<script>
+  // Change this one line to point every button somewhere else.
+  var CTA_URL = "https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2";
+  var SALE_END = new Date("2026-11-30T23:59:59");
+
+  document.querySelectorAll("[data-cta]").forEach(function (a) { a.setAttribute("href", CTA_URL); });
+
+  // countdown (real end date; shows days when more than 24h left)
+  (function () {
+    var el = {}; ["d","h","m","s"].forEach(function (k) { el[k] = document.querySelector('[data-t="' + k + '"]'); });
+    var dUnit = el.d.parentNode, dSep = dUnit.nextElementSibling;
+    function pad(n) { return (n < 10 ? "0" : "") + n; }
+    function tick() {
+      var t = Math.max(0, SALE_END - new Date()), s = Math.floor(t / 1000);
+      var d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60), sec = s % 60;
+      var showD = t > 86400000;
+      dUnit.style.display = showD ? "" : "none"; dSep.style.display = showD ? "" : "none";
+      el.d.textContent = pad(d); el.h.textContent = pad(h); el.m.textContent = pad(m); el.s.textContent = pad(sec);
+    }
+    tick(); setInterval(tick, 1000);
+    try { document.getElementById("saleEndTxt").textContent = SALE_END.toLocaleDateString("en-US", { month: "long", day: "numeric" }); } catch (e) {}
+  })();
+
+  // sticky CTA appears after scrolling past the first button
+  (function () {
+    var bar = document.getElementById("sticky"), first = document.querySelector(".hero .btn-main");
+    function check() {
+      var on = first.getBoundingClientRect().bottom < 0;
+      bar.classList.toggle("show", on); bar.setAttribute("aria-hidden", on ? "false" : "true");
+    }
+    window.addEventListener("scroll", check, { passive: true }); check();
+  })();
+
+  // gallery
+  (function () {
+    var main = document.getElementById("galMain"), base = "https://cdn.shopify.com/s/files/1/0621/0637/0102/files/";
+    document.querySelectorAll("#thumbs button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        document.querySelectorAll("#thumbs button").forEach(function (x) { x.classList.remove("on"); });
+        b.classList.add("on"); main.src = base + b.getAttribute("data-src") + "?width=900";
+      });
+    });
+  })();
+
+  // faq accordion
+  document.querySelectorAll(".qa button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var qa = b.parentNode, open = qa.classList.toggle("open");
+      b.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+</script>
+</body>
+</html>
