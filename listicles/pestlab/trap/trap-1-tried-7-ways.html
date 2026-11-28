@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Tried 7 Ways to Get Rid of the Flies | PestLab</title>
+<meta name="description" content="I tried 7 ways to get rid of the flies in my kitchen. Only one actually worked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Layout follows the Smooche "I tried 7 different" advertorial (same as mice listicle 3):
+     periwinkle countdown bar, pink masthead, pill + read time, two-tone headline, writer badge,
+     numbered sections (image beside text on desktop), dashed offer cards, sticky bottom CTA. */
+  :root{
+    --peri:#8096df; --pink:#df8096; --ink:#000; --text:#151515; --green:#2d4a22;
+    --soft:#f7f7f7; --line:#d9d9d9;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fff;color:var(--text);font-family:'Inter',system-ui,sans-serif;font-size:20px;line-height:1.3;-webkit-font-smoothing:antialiased;padding-bottom:120px}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  b,strong{font-weight:600;color:var(--ink)}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  .bar{background:var(--peri);color:#fff}
+  .bar .in{max-width:880px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 22px}
+  .bar .t{font-size:14px;font-weight:500;line-height:1.35;max-width:170px}
+  .cd{display:flex;align-items:center;gap:6px}
+  .cd span{background:rgba(255,255,255,.22);border-radius:4px;min-width:46px;text-align:center;font-size:21px;font-weight:500;padding:6px 6px}
+  .cd i{font-style:normal;font-weight:700}
+
+  .mast{background:var(--pink);color:#fff;text-align:center;padding:20px 16px 14px}
+  .mast .nm{font-size:28px;font-weight:700;letter-spacing:-.3px}
+  .mast nav{display:flex;justify-content:center;gap:22px;font-size:11px;font-weight:500;letter-spacing:.5px;margin-top:6px}
+
+  .meta{display:flex;align-items:center;gap:14px;margin:24px 0 16px;font-size:15px}
+  .pill{background:var(--peri);color:#fff;border-radius:20px;padding:4px 10px;font-size:15px}
+  .meta .dot{width:6px;height:6px;border-radius:50%;background:#000}
+  h1{font-size:36px;line-height:1.06;font-weight:700;color:var(--ink);letter-spacing:-.4px;margin-bottom:24px}
+  h1 span{display:block;color:var(--pink)}
+  .lead p{font-size:20px;line-height:1.4;color:var(--green);margin-bottom:22px}
+  .lead p b{color:var(--ink);font-weight:500}
+  .lead .six{color:var(--ink)}
+  .lead .six em{font-style:normal;color:var(--green)}
+  .badge{max-width:340px;margin:4px 0 38px}
+
+  .sec{display:grid;gap:14px;margin:0 0 44px}
+  h2{font-size:29px;line-height:1.1;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .sec p{font-size:20px;line-height:1.25}
+  .sec p + p{margin-top:14px}
+  .sec h2 + p{margin-top:14px}
+  .media{border-radius:16px;overflow:hidden;background:#fff}
+  .media img{width:100%}
+
+  .offer{border:2px dashed var(--line);border-radius:18px;padding:26px 20px 18px;text-align:center;margin:0 auto 44px;max-width:420px}
+  .offer h3{font-size:24px;line-height:1.15;font-weight:600;color:var(--ink);letter-spacing:.2px}
+  .offer h3 span{color:var(--pink)}
+  .offer .pimg{background:var(--soft);border-radius:16px;margin:18px 0 16px;padding:10px}
+  .offer .pimg img{border-radius:10px}
+  .offer p{font-size:15px;line-height:1.35;color:#222;margin:0 6px 16px}
+  .try{display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--peri);color:#fff;text-decoration:none;border-radius:20px;padding:15px 20px;font-size:24px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase}
+  .try:hover{filter:brightness(.95)}
+  .offer small{display:block;font-size:12px;color:#5c5c5c;margin-top:12px}
+
+  footer{text-align:center;font-size:12px;color:#777;line-height:1.6;padding:20px 20px 10px;background:var(--soft)}
+  footer a{margin:0 6px}
+
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--soft);border-top:1px solid var(--line);border-radius:20px 20px 0 0;padding:16px 24px 10px;text-align:center}
+  .sticky a{display:block;max-width:850px;margin:0 auto;background:var(--pink);color:#fff;text-decoration:none;border-radius:20px;padding:15px;font-size:24px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase}
+  .sticky .loved{display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;color:#151515;margin-top:8px}
+  .sticky .faces{display:flex}
+  .sticky .faces i{width:18px;height:18px;border-radius:50%;border:1px solid #fff;margin-left:-6px;background-size:cover;background-position:center}
+  .sticky .faces i:first-child{margin-left:0}
+
+  @media (min-width:760px){
+    h1{font-size:48px}
+    .lead{max-width:640px}
+    .sec{margin-bottom:60px}
+    .sec.has{grid-template-columns:1fr 1fr;column-gap:44px;align-items:start}
+    .sec.has .txt{grid-column:1;grid-row:1}
+    .sec.has .med{grid-column:2;grid-row:1}
+    .sec.has.flip .txt{grid-column:2}
+    .sec.has.flip .med{grid-column:1}
+    .sec:not(.has) .txt{max-width:640px}
+    .offer{margin-bottom:60px}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="in">
+  <div class="t">Up to 20% off + FREE shipping</div>
+  <div class="cd" data-cd><span data-a>00</span><i>:</i><span data-b>00</span><i>:</i><span data-c>00</span></div>
+</div></div>
+
+<header class="mast">
+  <div class="nm">PestLab Home Journal</div>
+  <nav><span>HOME</span><span>PEST CONTROL</span><span>KITCHEN</span></nav>
+</header>
+
+<main class="wrap">
+  <div class="meta"><span class="pill">Most read 2026</span><span class="dot"></span><span>4 min read</span></div>
+  <h1>I Tried 7 Ways to Get Rid of the Flies in My Kitchen. <span>Only One Actually Worked.</span></h1>
+
+  <div class="lead">
+    <p><b>Let me save you the headache and the money.</b></p>
+    <p>A <b>$4 bottle of apple cider vinegar</b>. A <b>$7 pack of fly strips</b>. A <b>$12 can of bug spray</b>. A <b>$35 electric zapper</b>. And more hours than I care to admit spent scrubbing every surface in my kitchen until it sparkled… only to watch another fly land on the counter five minutes later.</p>
+    <p class="six"><b>Five failures. One winner.</b> <em>Here's the difference:</em></p>
+  </div>
+
+  <img class="badge" src="img/writer-badge.png" alt="Michelle Mason, Home &amp; Lifestyle Writer, Verified">
+
+  <section class="sec">
+    <div class="txt">
+      <h2>1. I can actually eat in my kitchen again.</h2>
+      <p>The first thing I noticed was <b>fewer flies around my fruit bowl and sink.</b></p>
+      <p>No more waving my hand over my plate before every bite, no more tiny flies drifting toward my coffee cup the second I set it down.</p>
+      <p><b>My kitchen finally felt comfortable again.</b></p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>2. Nothing gross to clean up.</h2>
+      <p>Cleaning out my old traps was always the worst part. With PestLab, the insects stay on a <b>replaceable sticky cartridge</b>.</p>
+      <p>When it's full, I simply <b>slide it out, throw it away, and put in a fresh one.</b> It's much less unpleasant.</p>
+    </div>
+  </section>
+
+  <section class="sec has">
+    <div class="txt">
+      <h2>3. No chemical smell hanging in the air.</h2>
+      <p>I never liked spraying bug killer around the kitchen, especially near the food I was preparing. <b>The smell would linger for hours afterward.</b></p>
+      <p>PestLab <b>doesn't need pesticide sprays to operate</b>, which makes it a much more comfortable option for me.</p>
+    </div>
+    <div class="med"><div class="media"><img src="img/family-dinner-trap.jpg" alt="Family eating at the kitchen table with the PestLab trap on the wall"></div></div>
+  </section>
+
+  <section class="sec has flip">
+    <div class="txt">
+      <h2>4. I honestly forget it's there.</h2>
+      <p>I used to spend so much time checking traps or dealing with <b>that awful snapping sound from the zapper.</b></p>
+      <p>It <b>sits quietly in the outlet</b> and doesn't take up any counter space. Most of the time, I barely notice it.</p>
+    </div>
+    <div class="med"><div class="media"><img src="img/family-dog-trap.jpg" alt="Family and dog relaxing at home with the PestLab trap glowing on the wall"></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>5. It works day and night without me doing a thing.</h2>
+      <p>Flies always seemed to show up at the most inconvenient times, whether I was making breakfast or cleaning up after dinner.</p>
+      <p>I like that this trap can <b>stay plugged in throughout the day</b>, quietly catching insects without needing much attention.</p>
+    </div>
+  </section>
+
+  <aside class="offer" data-offer></aside>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>6. Here's the simple reason it works.</h2>
+      <p>The idea behind it is pretty simple. A <b>UV light attracts flying insects</b> toward the device, where they get caught on a <b>sticky cartridge</b>.</p>
+      <p>You can replace the cartridge whenever it fills up, so there's <b>very little maintenance involved.</b></p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>7. I'm not the only one who made the switch.</h2>
+      <p>When I started reading about this trap, I realized a lot of people had been going through the same cycle: the sprays, the strips, the zappers, the DIY traps - and ended up here.</p>
+      <p><b>114,000+ customers</b> have tried the PestLab Flying Insect Trap. Reading their experiences helped me feel more confident about trying one.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>8. Try it risk-free</h2>
+      <p>PestLab is offering <b>up to 20% off</b> right now, plus <b>free shipping</b> and a <b>90-day money-back guarantee</b>. If it doesn't make a difference, you send it back.</p>
+      <p>I'd already spent more than the price of this trap on things that didn't work. <b>At least this one came with a safety net.</b></p>
+    </div>
+  </section>
+
+  <aside class="offer" data-offer></aside>
+</main>
+
+<footer>
+  <p>© 2026 PestLab. <a href="https://pestlab.co/policies/terms-of-service">Terms</a><a href="https://pestlab.co/policies/privacy-policy">Privacy</a><a href="https://pestlab.co/policies/refund-policy">Refunds</a></p>
+  <p>Advertising disclosure: this page is an advertisement published by PestLab. Product features and claims are provided by the brand; individual results vary by insect type, placement and environment.</p>
+</footer>
+
+<div class="sticky">
+  <a data-cta href="https://pestlab.co/products/flying-insect-trap">Try it risk-free →</a>
+  <div class="loved"><span class="faces">
+    <i style="background-image:url(img/family-dog-trap.jpg)"></i>
+    <i style="background-image:url(img/family-dinner-trap.jpg)"></i>
+    <i style="background-image:url(img/coffee-window.gif)"></i>
+  </span>Trusted by 114,000+ customers.</div>
+</div>
+
+<template id="offerTpl">
+  <h3>🔥 UP TO 20% OFF <span>+ FREE SHIPPING</span></h3>
+  <div class="pimg"><img src="img/trap-box-guarantee.jpg" alt="PestLab Flying Insect Trap with its box and 90-day money-back guarantee badge"></div>
+  <p>I was skeptical too. After everything else I'd tried, I didn't think a little plug-in trap was going to be any different. But with free shipping and a 90-day money-back guarantee, there is nothing to lose.</p>
+  <a class="try" data-cta href="https://pestlab.co/products/flying-insect-trap">Try it risk-free <span>→</span></a>
+  <small>🛡️ Try it today with a 90-Day Money-Back Guarantee!</small>
+</template>
+
+<script>
+  /* ===== Settings you can edit ===== */
+  // Change this one line to point every button somewhere else.
+  var CTA_URL = "https://pestlab.co/products/flying-insect-trap";
+  // Sale end date (real, editable). The top bar counts down to this and stops at zero.
+  var SALE_END = new Date("2026-11-30T23:59:59");
+
+  var tpl = document.getElementById('offerTpl');
+  document.querySelectorAll('[data-offer]').forEach(function(o){ o.appendChild(tpl.content.cloneNode(true)); });
+  document.querySelectorAll('[data-cta]').forEach(function(a){ a.href = CTA_URL; });
+
+  // Shows days : hours : minutes while more than a day is left, then hours : minutes : seconds.
+  (function tick(){
+    var d = Math.max(0, SALE_END - new Date());
+    var days = Math.floor(d/864e5), h = Math.floor(d/36e5) % 24, m = Math.floor(d/6e4) % 60, s = Math.floor(d/1e3) % 60;
+    function p(n){ return (n < 10 ? '0' : '') + n; }
+    var v = days > 0 ? [days, h, m] : [h, m, s];
+    var c = document.querySelector('[data-cd]');
+    c.querySelector('[data-a]').textContent = p(v[0]);
+    c.querySelector('[data-b]').textContent = p(v[1]);
+    c.querySelector('[data-c]').textContent = p(v[2]);
+    if (d > 0) setTimeout(tick, 1000);
+  })();
+</script>
+</body>
+</html>
