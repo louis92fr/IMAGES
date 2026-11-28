@@ -92,19 +92,25 @@
   .split .bad .lab{background:var(--red);color:#fff} .split .good .lab{background:var(--green);color:#fff}
   .traps{font-size:24px;line-height:1.3;letter-spacing:2px;margin:6px 0}
 
-  .vs{display:grid;grid-template-columns:1fr 1fr;border-radius:12px;overflow:hidden;margin:0 0 16px;position:relative}
-  .vs > div{padding:14px 8px;min-width:0}
-  .vs .l{background:#fff;border:1px solid var(--line);border-right:0;border-radius:12px 0 0 12px}
-  .vs .r{background:#1f1f24;color:#fff}
-  .vs h4{text-align:center;font-weight:900;font-size:15px;letter-spacing:.5px;margin-bottom:8px}
-  .vs .r h4{color:#fff}
-  .vs img{width:72%;margin:0 auto 8px}
-  .vs ul{list-style:none;font-size:12.5px;line-height:1.3}
-  .vs li{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:6px 0;border-top:1px solid rgba(127,127,127,.18);text-align:center}
-  .vs li span{flex:1}
-  .vs .l li:after{content:"✓";flex:0 0 16px;height:16px;border-radius:3px;background:var(--green);color:#fff;font:900 10px/16px sans-serif}
-  .vs .r li:before{content:"✕";flex:0 0 14px;color:#ff5a4e;font-weight:900}
-  .vs .badge{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#555;color:#fff;border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px}
+  /* section 4: side-by-side cost comparison, rows aligned left to right */
+  .vs{position:relative;display:grid;grid-template-columns:1fr 1fr;border-radius:16px;overflow:hidden;margin:0 0 18px;box-shadow:0 6px 22px rgba(20,22,40,.12);border:1px solid var(--line)}
+  .vs .hd{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:8px;padding:16px 10px 14px;text-align:center;min-height:170px}
+  .vs .hd.l{background:#fff}
+  .vs .hd.r{background:#1f1f24;color:#fff}
+  .vs .hd img{width:112px;height:auto;filter:drop-shadow(0 6px 10px rgba(2,102,254,.18))}
+  .vs .hd .emo{font-size:30px;line-height:1.15;letter-spacing:4px}
+  .vs .hd b{font-size:15px;font-weight:900;letter-spacing:.8px;text-transform:uppercase}
+  .vs .hd small{font-size:12px;font-weight:700;opacity:.75}
+  .vs .c{display:flex;align-items:center;gap:9px;padding:13px 12px;font-size:14px;line-height:1.3;font-weight:700;min-width:0;border-top:1px solid var(--line)}
+  .vs .c.l{background:#fff;color:var(--ink)}
+  .vs .c.r{background:#26262c;color:#e9e9ee;border-top-color:#38383f;font-weight:400}
+  .vs .c i{flex:0 0 22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:900 12px sans-serif;font-style:normal;color:#fff}
+  .vs .c.l i{background:var(--green)}
+  .vs .c.r i{background:var(--red)}
+  .vs .c b{font-weight:900}
+  .vs .total.l{background:#eef7f0;color:var(--green);font-weight:900;font-size:15px;justify-content:center}
+  .vs .total.r{background:#3a1f22;color:#ff8a80;font-weight:900;font-size:15px;justify-content:center}
+  .vs .badge{position:absolute;left:50%;top:86px;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.25);z-index:2}
 
   /* social proof */
   .proof{background:var(--tint);padding:26px 0 0;text-align:center}
@@ -290,9 +296,19 @@
 
   <section class="reason"><div class="wrap">
     <div class="rh"><span>4</span><h2>One Device Lasts Over 4 Years</h2></div>
-    <div class="vs">
-      <div class="l"><h4>PESTLAB</h4><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=300" alt="PestLab device"><ul><li><span>$29.99 one time</span></li><li><span>Lasts 4 to 5 years</span></li><li><span>No refills</span></li><li><span>No visits to book</span></li></ul></div>
-      <div class="r"><h4>TRAPS &amp; PROS 😩</h4><ul style="margin-top:6px"><li><span>Snap traps: $3 to $5 each, need 10+ per house</span></li><li><span>Replace constantly</span></li><li><span>Poison bait: $30 to $60, refill every few months</span></li><li><span>Exterminator: $200 to $500 per visit</span></li></ul></div>
+    <div class="vs" role="table" aria-label="PestLab compared with traps, poison bait and exterminators">
+      <div class="hd l"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=300" alt="PestLab device"><b>PestLab</b><small>One device</small></div>
+      <div class="hd r"><div class="emo">🪤☠️<br>🧑‍🔧</div><b>Traps &amp; pros</b><small>Bait &amp; exterminators</small></div>
+      <div class="c l"><i>✓</i><span><b>$29.99</b> one time</span></div>
+      <div class="c r"><i>✕</i><span>Snap traps: $3 to $5 each, need 10+ per house</span></div>
+      <div class="c l"><i>✓</i><span>Lasts <b>4 to 5 years</b></span></div>
+      <div class="c r"><i>✕</i><span>Replace constantly</span></div>
+      <div class="c l"><i>✓</i><span><b>No</b> refills</span></div>
+      <div class="c r"><i>✕</i><span>Poison bait: $30 to $60, refill every few months</span></div>
+      <div class="c l"><i>✓</i><span><b>No</b> visits to book</span></div>
+      <div class="c r"><i>✕</i><span>Exterminator: $200 to $500 per visit</span></div>
+      <div class="c total l">$29.99 once</div>
+      <div class="c total r">Costs keep adding up</div>
       <div class="badge">VS</div>
     </div>
     <p>Snap traps cost $5 and <b>last until the first mouse</b>. An exterminator charges <b>$200 to $500 per visit</b>. The PestLab device costs <b>$29.99</b>, lasts <b>4 to 5 years</b>, and uses less electricity than a night light.</p>
