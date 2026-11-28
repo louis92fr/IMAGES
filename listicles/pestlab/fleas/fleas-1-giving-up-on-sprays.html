@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giving Up on Flea Sprays | PestLab</title>
+<meta name="description" content="5 reasons pet owners are giving up on flea sprays and switching to a $30 plug-in.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  /* Layout follows the Polar Hair Care "5 Reasons" listicle: dark sale bar, Lato headline with
+     highlighted sub-line, note box, byline with views, comparison table, numbered reasons with
+     link CTAs, social-proof carousel, ticker, buy box, FAQ, guarantee, sale card, notice, footer. */
+  :root{
+    --ink:#1e2123; --navy:#2c3452; --muted:#5d6270; --bar:#15131c; --gold:#f2c14e;
+    --hl:#f5c84c; --soft:#f4f4f4; --tint:#eceef3; --line:#e2e3e7; --green:#2e9b55; --red:#d93025;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fff;color:var(--ink);font-family:'Lato',Arial,sans-serif;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  b,strong{font-weight:900}
+  .wrap{max-width:600px;margin:0 auto;padding:0 16px}
+
+  /* top bar */
+  .bar{position:sticky;top:0;z-index:40;background:var(--bar);color:#fff}
+  .bar .in{max-width:600px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;padding:9px 12px}
+  .bar .t{text-align:center;line-height:1.25}
+  .bar .t b{display:block;color:var(--gold);font-size:13px;font-weight:700}
+  .bar .t small{font-size:11px;font-weight:700}
+  .bar .t small span{color:var(--gold)}
+  .cd{display:flex;align-items:center;gap:3px;background:#fff;color:var(--ink);border-radius:6px;padding:3px 8px}
+  .cd div{text-align:center;min-width:22px;line-height:1}
+  .cd b{display:block;font-size:17px;font-weight:700}
+  .cd small{font-size:8px;font-weight:700;color:#555}
+  .cd i{font-style:normal;font-weight:700;color:#999;margin-top:-8px}
+
+  /* header */
+  h1{font-weight:900;font-size:29px;line-height:1.12;letter-spacing:-.3px;margin:20px 0 8px}
+  .sub{font-size:17px;font-weight:700;line-height:1.5;margin-bottom:10px}
+  .sub mark{background:var(--hl);color:var(--ink);padding:1px 6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .navy{color:var(--navy);font-weight:700;font-size:17px;line-height:1.6;margin-bottom:14px}
+  .note{background:var(--tint);border-left:4px solid var(--navy);border-radius:4px;padding:12px 16px;color:var(--navy);font-weight:700;font-size:15px;margin-bottom:16px}
+  .by{display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding:14px 0;font-size:13px;line-height:1.4;color:var(--muted)}
+  .by .av{width:42px;height:42px;border-radius:50%;background:var(--tint);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;flex:0 0 42px}
+  .by b{color:var(--ink);font-weight:700}
+  .by .r{margin-left:auto;text-align:right}
+  .by .r b{font-weight:900}
+
+  /* comparison table */
+  .cmp{border:1px solid var(--line);border-radius:10px;padding:8px 4px;margin-bottom:6px;overflow-x:auto}
+  .cmp table{width:100%;border-collapse:separate;border-spacing:0;font-size:11.5px;line-height:1.25;text-align:center;min-width:340px}
+  .cmp th{font-weight:400;color:var(--muted);padding:6px 3px;vertical-align:bottom}
+  .cmp td{padding:7px 3px;border-top:1px solid var(--line);vertical-align:middle}
+  .cmp td:first-child,.cmp th:first-child{text-align:left;font-weight:700;color:var(--ink);padding-left:6px;width:22%}
+  .cmp .us{background:#eef7f0;border-left:2px solid var(--navy);border-right:2px solid var(--navy);color:var(--navy);font-weight:700}
+  .cmp th.us{border-top:2px solid var(--navy);border-radius:8px 8px 0 0;color:var(--navy);font-weight:900;font-size:13px;letter-spacing:.3px}
+  .cmp tr:last-child .us{border-bottom:2px solid var(--navy);border-radius:0 0 8px 8px}
+  .ok,.no{display:block;width:17px;height:17px;border-radius:50%;margin:0 auto 2px;color:#fff;font:900 10px/17px sans-serif}
+  .ok{background:var(--green)} .no{background:var(--red)}
+  .cmpnote{font-size:12px;color:var(--muted);margin-bottom:16px}
+
+  .pic{border-radius:12px;overflow:hidden;margin:0 0 16px}
+  .pic img{width:100%}
+  .comment{display:flex;gap:10px;margin:4px 0 26px}
+  .comment .av{width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;flex:0 0 40px}
+  .comment .bub{background:var(--soft);border-radius:14px;padding:10px 14px;font-size:16px;line-height:1.35}
+  .comment .bub b{display:block;font-size:14px;font-weight:700;margin-bottom:2px}
+  .comment .bub .st{color:#f5b301;font-size:13px;letter-spacing:1px}
+
+  /* reasons */
+  .reason{border-top:8px solid var(--soft);padding:26px 0 26px}
+  .rh{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px}
+  .rh span{flex:0 0 40px;height:40px;border-radius:6px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px}
+  h2{font-weight:900;font-size:24px;line-height:1.2;margin:2px 0 0}
+  .reason p{font-size:18px;line-height:1.65;margin-bottom:16px}
+  .go{display:inline-flex;gap:6px;font-weight:700;font-size:16px;color:var(--navy)}
+  .go a{text-decoration:underline;text-underline-offset:3px}
+
+  .ben{list-style:none;margin:0 0 16px;display:grid;gap:10px}
+  .ben li{display:flex;align-items:center;gap:14px;background:var(--soft);border-radius:12px;padding:12px 14px}
+  .ben .ic{flex:0 0 44px;height:44px;border-radius:50%;background:#e6e7ea;display:flex;align-items:center;justify-content:center;font-size:20px}
+  .ben b{display:block;font-weight:700;font-size:17px}
+  .ben small{font-size:16px;color:#3a3d44;line-height:1.4}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 16px}
+  .split > div{border-radius:12px;padding:12px;text-align:center;font-size:14px;line-height:1.35;min-width:0}
+  .split .bad{background:#2b2b2f;color:#eee}
+  .split .good{background:#eef7f0;color:var(--ink)}
+  .split .lab{display:inline-block;font-weight:900;font-size:12px;letter-spacing:.6px;padding:3px 10px;border-radius:20px;margin-bottom:8px}
+  .split .bad .lab{background:var(--red);color:#fff} .split .good .lab{background:var(--green);color:#fff}
+  .traps{font-size:24px;line-height:1.3;letter-spacing:2px;margin:6px 0}
+
+  /* section 4: side-by-side cost comparison, rows aligned left to right */
+  .vs{position:relative;display:grid;grid-template-columns:1fr 1fr;border-radius:16px;overflow:hidden;margin:0 0 18px;box-shadow:0 6px 22px rgba(20,22,40,.12);border:1px solid var(--line)}
+  .vs .hd{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:8px;padding:16px 10px 14px;text-align:center;min-height:170px}
+  .vs .hd.l{background:#fff}
+  .vs .hd.r{background:#1f1f24;color:#fff}
+  .vs .hd img{width:112px;height:auto;filter:drop-shadow(0 6px 10px rgba(2,102,254,.18))}
+  .vs .hd .emo{font-size:30px;line-height:1.15;letter-spacing:4px}
+  .vs .hd b{font-size:15px;font-weight:900;letter-spacing:.8px;text-transform:uppercase}
+  .vs .hd small{font-size:12px;font-weight:700;opacity:.75}
+  .vs .c{display:flex;align-items:center;gap:9px;padding:13px 12px;font-size:14px;line-height:1.3;font-weight:700;min-width:0;border-top:1px solid var(--line)}
+  .vs .c.l{background:#fff;color:var(--ink)}
+  .vs .c.r{background:#26262c;color:#e9e9ee;border-top-color:#38383f;font-weight:400}
+  .vs .c i{flex:0 0 22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:900 12px sans-serif;font-style:normal;color:#fff}
+  .vs .c.l i{background:var(--green)}
+  .vs .c.r i{background:var(--red)}
+  .vs .c b{font-weight:900}
+  .vs .total.l{background:#eef7f0;color:var(--green);font-weight:900;font-size:15px;justify-content:center}
+  .vs .total.r{background:#3a1f22;color:#ff8a80;font-weight:900;font-size:15px;justify-content:center}
+  .vs .badge{position:absolute;left:50%;top:86px;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.25);z-index:2}
+
+  /* social proof */
+  .proof{background:var(--tint);padding:26px 0 0;text-align:center}
+  .proof .st{color:#f5b301;font-size:26px;letter-spacing:3px}
+  .proof .rt{font-size:15px;color:var(--muted);margin-bottom:8px}
+  .proof h2{color:var(--navy);font-size:26px;line-height:1.15;margin-bottom:16px;text-transform:none}
+  .slides{position:relative}
+  .slide{display:none;background:#fff;border-radius:12px;padding:14px;text-align:left;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+  .slide.on{display:block}
+  .slide .who{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+  .slide .who span{width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px}
+  .slide .who b{font-size:15px;font-weight:700}
+  .slide .who small{display:block;color:#f5b301;font-size:13px;letter-spacing:1px}
+  .slide p{font-size:15.5px;line-height:1.5;margin-bottom:10px}
+  .slide img{border-radius:10px;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%}
+  .nav{display:flex;justify-content:center;gap:16px;padding:14px 0 18px}
+  .nav button{width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:22px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .ticker{background:#4a5168;color:#fff;overflow:hidden;white-space:nowrap;font-weight:700;font-size:15px;padding:12px 0}
+  .ticker div{display:inline-block;animation:tk 28s linear infinite}
+  @keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.ticker div{animation:none}}
+  .faces{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:12px 16px 0;max-width:600px;margin:0 auto}
+  .faces img{aspect-ratio:1/1;object-fit:cover;border-radius:8px}
+
+  /* buy box */
+  .buy{padding:22px 0 10px}
+  .gal{border-radius:12px;overflow:hidden;background:#fff;border:1px solid var(--line);position:relative}
+  .gal img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff}
+  .gal button{position:absolute;top:50%;transform:translateY(-50%);right:10px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:var(--navy);font-size:22px;cursor:pointer}
+  .gal .pv{left:10px;right:auto}
+  .th{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:8px 0 16px}
+  .th button{border:2px solid transparent;border-radius:6px;padding:0;background:#eee;cursor:pointer;overflow:hidden}
+  .th button.on{border-color:var(--ink)}
+  .th img{aspect-ratio:1/1;object-fit:contain;background:#fff}
+  .pur{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);margin-bottom:4px}
+  .pur .dots{display:flex}
+  .pur .dots i{width:24px;height:24px;border-radius:50%;border:2px solid #fff;margin-left:-6px;background-size:cover;background-position:center}
+  .pur .dots i:first-child{margin-left:0}
+  .pur b{color:var(--ink);font-weight:700}
+  .rate{font-size:15px;color:var(--muted);margin-bottom:6px}
+  .rate span{color:#f5b301;letter-spacing:1px}
+  .pt{font-weight:900;font-size:28px;line-height:1.15;margin-bottom:6px}
+  .price{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .price s{color:var(--muted);font-size:17px}
+  .price b{font-size:24px}
+  .price em{font-style:normal;background:var(--bar);color:var(--gold);font-size:12px;font-weight:900;padding:4px 8px;border-radius:4px;letter-spacing:.3px}
+  .pdesc{font-size:16px;color:var(--muted);line-height:1.5;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:14px}
+  .ql{font-weight:700;font-size:16px;margin-bottom:8px}
+  .tier{display:block;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden;cursor:pointer;position:relative}
+  .tier.sel{border:2px solid var(--ink)}
+  .tier .top{display:flex;align-items:center;gap:12px;padding:14px 14px}
+  .tier input{appearance:none;flex:0 0 22px;height:22px;border-radius:50%;border:2px solid #9aa0ab;margin:0}
+  .tier input:checked{border:7px solid var(--ink)}
+  .tier .nm{flex:1;min-width:0}
+  .tier .nm b{display:block;font-weight:700;font-size:17px}
+  .tier .save{display:inline-block;background:#e6f4ea;color:var(--green);font-weight:900;font-size:12px;padding:2px 8px;border-radius:20px;margin-top:3px}
+  .tier .pr{text-align:right;white-space:nowrap}
+  .tier .pr b{font-size:19px;font-weight:700}
+  .tier .pr small{font-size:12px;color:var(--muted)}
+  .tier .pr s{display:block;font-size:13px;color:var(--muted)}
+  .tier .gift{display:flex;align-items:center;gap:10px;background:var(--soft);border-top:1px solid var(--line);padding:9px 14px;font-size:14px;font-weight:700}
+  .tier .gift s{margin-left:auto;font-weight:400;color:var(--muted)}
+  .tier .best{position:absolute;right:14px;top:-1px;background:var(--ink);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:0 0 6px 6px}
+  .cta{display:flex;align-items:center;justify-content:center;gap:14px;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:16px;border-radius:10px}
+  .cta i{font-style:normal;background:rgba(0,0,0,.25);border-radius:6px;padding:2px 10px}
+  .under{display:flex;justify-content:space-between;font-size:14px;margin:8px 0 14px;color:var(--ink)}
+  .under .g{color:var(--green);font-weight:700}
+  .ends{display:flex;justify-content:space-between;font-size:15px;font-weight:700;margin-bottom:14px}
+  .ends span{color:var(--red);font-weight:400}
+  .guar{display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:6px}
+  .guar img{width:70px;flex:0 0 70px}
+  .guar b{display:block;font-weight:700;font-size:17px}
+  .guar small{font-size:14.5px;color:var(--muted)}
+
+  /* faq */
+  .faq{background:var(--tint);padding:30px 0 30px}
+  .faq h3{font-weight:900;font-size:26px;line-height:1.2;margin-bottom:16px}
+  details{background:#fff;border-radius:10px;margin-bottom:10px}
+  summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;font-weight:700;font-size:17px;cursor:pointer;line-height:1.35}
+  summary::-webkit-details-marker{display:none}
+  summary:after{content:"+";font-size:24px;font-weight:400;color:var(--navy);flex:0 0 auto}
+  details[open] summary:after{content:"–"}
+  details p{padding:0 18px 16px;font-size:16px;line-height:1.55;color:#33363c}
+
+  .conf{text-align:center;padding:30px 0}
+  .conf img{width:110px;margin:0 auto 10px}
+  .conf h3{color:var(--navy);font-weight:900;font-size:24px;line-height:1.15;text-transform:uppercase;margin-bottom:10px}
+  .conf p{font-size:17px;line-height:1.6}
+
+  .vip{border:2px dashed var(--bar);border-radius:6px;margin:30px 0 30px;padding:0 0 20px;text-align:center;position:relative}
+  .vip .hd{display:inline-block;background:var(--bar);color:var(--gold);font-weight:900;font-size:17px;padding:10px 22px;border-radius:10px 10px 0 0;margin-top:-24px}
+  .vip img{width:100%}
+  .vip .fg{display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:14px;letter-spacing:1px;margin:14px 0 6px}
+  .vip h3{font-weight:900;font-size:27px;line-height:1.1;padding:0 14px;margin-bottom:8px}
+  .vip h3 span{color:#c0272d}
+  .vip p{font-size:16px;line-height:1.5;padding:0 18px;margin-bottom:14px}
+  .vip .cta{margin:0 18px}
+  .vip .de{font-weight:900;font-size:15px;margin:12px 0}
+  .vip .de span{color:var(--red)}
+  .vip .fs{margin:0 18px 12px;background:#fff6ef;border:1px solid #f1dccb;border-radius:6px;padding:10px;font-size:14px}
+  .vip small{font-size:14.5px;color:var(--muted)}
+
+  .attn{background:var(--tint);padding:26px 0}
+  .attn .k{color:#c0272d;font-weight:700;font-size:15px;letter-spacing:.5px}
+  .attn h3{font-weight:900;font-size:24px;line-height:1.2;margin:2px 0 8px}
+  .attn p{font-size:17px;line-height:1.6}
+
+  footer{text-align:center;padding:26px 16px 40px;font-size:13px;color:var(--muted);line-height:1.7}
+  footer .logo{width:150px;margin:0 auto 10px}
+  footer a{margin:0 6px}
+  @media (min-width:640px){h1{font-size:34px}}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="in">
+  <div class="t"><b>✨ HOLIDAY SALE ✨</b><small>up to <span>40% OFF</span> + FREE SHIPPING ON 6+ DEVICES</small></div>
+  <div class="cd" data-cd><div><b data-d>00</b><small>DAYS</small></div><i>:</i><div><b data-h>00</b><small>HRS</small></div><i>:</i><div><b data-m>00</b><small>MIN</small></div></div>
+</div></div>
+
+<main>
+  <div class="wrap">
+    <h1>5 Reasons Pet Owners Are Giving Up on Flea Sprays and Switching to This $30 Plug-In</h1>
+    <p class="sub"><mark>Get up to 40% off today.</mark> No sprays. No chemicals. No flea bombs.</p>
+    <p class="navy">No toxic residue on carpets, no chemicals near your pets, works in every room.</p>
+    <div class="note">Read this BEFORE you spray your house for fleas again.</div>
+    <div class="by">
+      <div class="av">SM</div>
+      <div>By <b>Sarah Mitchell</b><br>Last updated November 2026</div>
+      <div class="r"><b>4.8m views</b> 🔥<br>3 min read</div>
+    </div>
+
+    <div class="cmp"><table>
+      <tr><th></th><th class="us">PestLab</th><th>Flea collars</th><th>Chemical sprays / bombs</th><th>Exterminator</th></tr>
+      <tr><td>Setup time</td><td class="us">10 seconds (plug in)</td><td>Fit to pet's neck</td><td>30+ min per room</td><td>Schedule a visit</td></tr>
+      <tr><td>Treats the whole room</td><td class="us"><i class="ok">✓</i>Yes, up to 300 sq ft</td><td><i class="no">✕</i>No, pet only</td><td>Surfaces only</td><td>Yes</td></tr>
+      <tr><td>Safe for kids and pets</td><td class="us"><i class="ok">✓</i>Yes</td><td>Chemicals on pet's skin</td><td><i class="no">✕</i>No (toxic residue)</td><td>Varies</td></tr>
+      <tr><td>Ongoing cost</td><td class="us">$0 after purchase</td><td>$15 to $30 every few months</td><td>$20 to $50 per treatment</td><td>$200 to $500 per visit</td></tr>
+      <tr><td>Maintenance</td><td class="us"><i class="ok">✓</i>None</td><td>Replace regularly</td><td>Reapply every few weeks</td><td>Repeat visits needed</td></tr>
+      <tr><td>Have to leave the house</td><td class="us"><i class="ok">✓</i>No</td><td>No</td><td><i class="no">✕</i>Yes (flea bombs)</td><td>Sometimes</td></tr>
+      <tr><td>Smell</td><td class="us"><i class="ok">✓</i>None</td><td>Chemical collar smell</td><td><i class="no">✕</i>Strong chemical fumes</td><td>Chemical treatments</td></tr>
+    </table></div>
+    <p class="cmpnote">PestLab Pest Repeller vs Flea Collars vs Chemical Sprays/Bombs vs Exterminator.</p>
+
+    <div class="pic"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/1.jpg?width=900" alt="PestLab plugged in near a sofa where a dog is resting"></div>
+    <div class="comment">
+      <div class="av">MT</div>
+      <div class="bub"><b>Maria T.</b><span class="st">★★★★★</span><br>As a nurse and single mom of two young children and a dog… I needed something effective yet safe for my kids and my puppy. … I chose PestLab ultrasonic repellers for their child-friendly approach, no chemicals, no poisons, just plug them in.</div>
+    </div>
+  </div>
+
+  <section class="reason"><div class="wrap">
+    <div class="rh"><span>1</span><h2>See Results in as Little as 2 Days</h2></div>
+    <div class="pic"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/PestLab-Clip9b_1.jpg?width=900" alt="A PestLab customer at home with her dog" style="aspect-ratio:1/1;object-fit:cover;object-position:50% 40%"></div>
+    <p>Flea sprays and bombs take hours to set up and require you to leave the house. The PestLab device <b>starts working the moment you plug it in</b>. Many pet owners report noticing their animals <b>scratching less within the first few days</b>.</p>
+    <p class="go">👉 <a data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Get up to 40% off</a></p>
+  </div></section>
+
+  <section class="reason"><div class="wrap">
+    <div class="rh"><span>2</span><h2>No More Chemicals Where Your Pets Sleep and Play</h2></div>
+    <div class="pic"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/2.jpg?width=900" alt="PestLab plugged in near a dog in a calm living room"></div>
+    <p>Flea sprays leave <b>toxic residue on carpets, furniture, and floors</b> where your pets lie down and your kids crawl. The PestLab device uses ultrasonic and electromagnetic signals instead of chemicals. There is <b>nothing to inhale, nothing settling into the carpet, and nothing your pet can lick off the floor.</b></p>
+    <ul class="ben">
+      <li><span class="ic">🧴</span><div><b>No sprays</b><small>Nothing misted over carpets or furniture.</small></div></li>
+      <li><span class="ic">🧂</span><div><b>No powders</b><small>Nothing sprinkled where pets and kids lie down.</small></div></li>
+      <li><span class="ic">💣</span><div><b>No flea bombs</b><small>No clearing the house for hours.</small></div></li>
+      <li><span class="ic">🧪</span><div><b>No toxic residue</b><small>Nothing for your pet to lick off the floor.</small></div></li>
+      <li><span class="ic">👃</span><div><b>No chemical smell</b><small>Nothing lingering in the air.</small></div></li>
+    </ul>
+    <p class="go">👉 <a data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Get up to 40% off</a></p>
+  </div></section>
+
+  <section class="reason"><div class="wrap">
+    <div class="rh"><span>3</span><h2>Covers the Whole Room, Not Just Your Pet</h2></div>
+    <div class="pic"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/4_0ca9f2e0-4cc6-403a-b9a7-3e5133d21efa.jpg?width=900" alt="Where PestLab works: every room in your home"></div>
+    <p>A flea collar <b>only protects the animal wearing it</b>. It does nothing about the fleas in your carpet, your couch cushions, or the cracks in your floorboards. The PestLab device covers <b>up to 300 square feet from a single outlet</b>. One device per room targets the fleas where they actually live and breed.</p>
+    <div class="split">
+      <div class="bad"><span class="lab">FLEA COLLAR</span><div class="traps">🐕<br>⭕</div>Pet only. Carpet, couch and floors left out</div>
+      <div class="good"><span class="lab">PESTLAB</span><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=300" alt="PestLab device" style="width:62%;margin:0 auto 6px">One device on the wall, up to 300 sq ft</div>
+    </div>
+    <p class="go">👉 <a data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Get up to 40% off</a></p>
+  </div></section>
+
+  <section class="reason"><div class="wrap">
+    <div class="rh"><span>4</span><h2>One Device Lasts Over 4 Years</h2></div>
+    <div class="vs" role="table" aria-label="PestLab compared with flea collars, sprays, bombs and exterminators">
+      <div class="hd l"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=300" alt="PestLab device"><b>PestLab</b><small>One device</small></div>
+      <div class="hd r"><div class="emo">🧴💣<br>🧑‍🔧</div><b>Flea products</b><small>Collars, sprays &amp; pros</small></div>
+      <div class="c l"><i>✓</i><span><b>$29.99</b> one time</span></div>
+      <div class="c r"><i>✕</i><span>Flea collars: $15 to $30, replace every few months</span></div>
+      <div class="c l"><i>✓</i><span>Lasts <b>4 to 5 years</b></span></div>
+      <div class="c r"><i>✕</i><span>Flea sprays: $20 to $50 per treatment, ongoing</span></div>
+      <div class="c l"><i>✓</i><span><b>No</b> refills</span></div>
+      <div class="c r"><i>✕</i><span>Flea bombs: $10 to $25 each, repeat seasonally</span></div>
+      <div class="c l"><i>✓</i><span><b>No</b> visits to book</span></div>
+      <div class="c r"><i>✕</i><span>Exterminator: $200 to $500 per visit</span></div>
+      <div class="c total l">$29.99 once</div>
+      <div class="c total r">Costs keep adding up</div>
+      <div class="badge">VS</div>
+    </div>
+    <p>Flea collars cost <b>$15 to $30</b> and need replacing every few months. Sprays and bombs run <b>$20 to $50 per treatment</b> and need reapplying regularly. The PestLab device costs <b>$29.99</b>, lasts <b>4 to 5 years</b>, and uses less electricity than a night light.</p>
+    <p class="go">👉 <a data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Get up to 40% off</a></p>
+  </div></section>
+
+  <section class="reason"><div class="wrap">
+    <div class="rh"><span>5</span><h2>No Flea Bombs, No Evacuating the House</h2></div>
+    <div class="pic"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Pestlab_Cov.jpg?width=900" alt="A dog relaxing on the sofa in a pest-free home"></div>
+    <p>The PestLab device is <b>100% chemical-free, completely silent</b>, and designed to be safe for children and pets when used as directed. <b>You never have to clear the house</b>, cover the furniture, or keep everyone out of a room for hours while chemicals settle.</p>
+    <p class="go">👉 <a data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Get up to 40% off</a></p>
+  </div></section>
+
+  <section class="proof">
+    <div class="wrap">
+      <div class="st">★★★★★</div>
+      <p class="rt">4.8 out of 5 | 7,000+ verified reviews</p>
+      <h2>Over 140,000 Homeowners Have Made The Switch</h2>
+      <div class="slides" id="slides">
+        <div class="slide on"><div class="who"><span>MT</span><div><b>Maria T.</b><small>★★★★★</small></div></div><p>"As a nurse and single mom of two young children and a dog… I needed something effective yet safe for my kids and my puppy. After doing extensive research, I chose PestLab ultrasonic repellers for their child-friendly approach, no chemicals, no poisons, just plug them in. … The silent operation means we don't even notice they're working."</p><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/01C057ED-80E4-4BA9-ACA0-D976FC4F54E6_3.jpg?width=700" alt="PestLab customer holding her devices"></div>
+        <div class="slide"><div class="who"><span>A</span><div><b>Amanda, Oklahoma</b><small>★★★★★</small></div></div><p>"No more harmful chemicals around my kids and dog. It's so reassuring to finally have an effective and safe solution."</p><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/PestLab-Clip9b_1.jpg?width=700" alt="PestLab customer at home with her dog"></div>
+        <div class="slide"><div class="who"><span>WG</span><div><b>Walter G.</b><small>★★★★★</small></div></div><p>"The PestLab system was completely hands-off for me, just plug in and forget. The price was actually reasonable considering the peace of mind."</p><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Capture_d_ecran_2024-11-10_a_13.30.39_1.png?width=700" alt="PestLab customer holding his device"></div>
+      </div>
+      <div class="nav"><button type="button" id="prev" aria-label="Previous review">‹</button><button type="button" id="next" aria-label="Next review">›</button></div>
+    </div>
+    <div class="ticker"><div>&nbsp;140,000+ Happy Customers &nbsp;•&nbsp; 7,000+ Five-Star Reviews &nbsp;•&nbsp; 90-Day Guarantee &nbsp;•&nbsp; 140,000+ Happy Customers &nbsp;•&nbsp; 7,000+ Five-Star Reviews &nbsp;•&nbsp; 90-Day Guarantee &nbsp;•&nbsp; 140,000+ Happy Customers &nbsp;•&nbsp; 7,000+ Five-Star Reviews &nbsp;•&nbsp; 90-Day Guarantee &nbsp;•&nbsp; 140,000+ Happy Customers &nbsp;•&nbsp; 7,000+ Five-Star Reviews &nbsp;•&nbsp; 90-Day Guarantee &nbsp;•</div></div>
+  </section>
+
+  <section class="buy" id="offer"><div class="wrap">
+    <div class="gal"><img id="gmain" src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=900" alt="PestLab Pest Repeller"><button type="button" class="pv" id="gp" aria-label="Previous image">‹</button><button type="button" id="gn" aria-label="Next image">›</button></div>
+    <div class="th" id="thumbs">
+      <button type="button" class="on" data-i="0"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=200" alt=""></button>
+      <button type="button" data-i="1"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/3.jpg?width=200" alt=""></button>
+      <button type="button" data-i="2"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/4_0ca9f2e0-4cc6-403a-b9a7-3e5133d21efa.jpg?width=200" alt=""></button>
+      <button type="button" data-i="3"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/1.jpg?width=200" alt=""></button>
+      <button type="button" data-i="4"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/2.jpg?width=200" alt=""></button>
+      <button type="button" data-i="5"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Pestlab_Cov.jpg?width=200" alt=""></button>
+    </div>
+    <div class="pur"><span class="dots"><i style="background-image:url(https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Lois_Pest_Lab_Stills_3_2.jpg?width=80)"></i><i style="background-image:url(https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Capture_d_ecran_2024-11-10_a_13.30.39_1.png?width=80)"></i><i style="background-image:url(https://cdn.shopify.com/s/files/1/0621/0637/0102/files/01C057ED-80E4-4BA9-ACA0-D976FC4F54E6_3.jpg?width=80)"></i></span><span>Join <b>140,000+</b> happy customers</span></div>
+    <p class="rate"><span>★★★★★</span> 4.8/5 (7,000+ verified reviews)</p>
+    <div class="pt">PestLab Pest Repeller</div>
+    <div class="price"><s>$29.99</s><b>From $18.00</b><em>HOLIDAY SALE</em></div>
+    <p class="pdesc">Plug-in ultrasonic repeller designed to keep fleas and other pests away from your home. No sprays, no powders, no flea bombs. Covers up to 300 sq ft per device, one per room.</p>
+    <p class="ql">Select Quantity:</p>
+    <div id="tiers"></div>
+    <a class="cta" data-cta id="buybtn" href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Get up to 40% off <i>→</i></a>
+    <div class="under"><span class="g">🛡️ 90-Day Money-Back Guarantee</span><span>🇺🇸 | Free shipping on 6+ devices</span></div>
+    <div class="ends">Holiday sale <span>Ends in <b data-txt>00:00:00</b></span></div>
+    <div class="guar"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/wshgvzdgzhuj.webp?width=200" alt="90-day money-back guarantee"><div><b>90-Day Money-Back Guarantee</b><small>FREE Shipping on 6 or more devices.</small></div></div>
+  </div></section>
+
+  <div class="faces">
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Lois_Pest_Lab_Stills_3_2.jpg?width=300" alt="PestLab customer">
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Capture_d_ecran_2024-11-13_a_10.40.13_2.png?width=300" alt="PestLab customer">
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/367448541_107178842480264_8039892391646329545_n.webp?width=300" alt="PestLab customer">
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/PestLab-Clip9b_1.jpg?width=300" alt="PestLab customer">
+  </div>
+
+  <section class="faq"><div class="wrap">
+    <h3>Frequently Asked Questions</h3>
+    <details><summary>Does it really work for fleas?</summary><p>The PestLab Pest Repeller emits ultrasonic and electromagnetic signals designed to make the environment uncomfortable for fleas and other pests. Many pet owners report noticing their animals scratching less within the first few days. Individual results depend on the size of the room, the severity of the infestation, and correct placement.</p></details>
+    <details><summary>How many devices do I need?</summary><p>PestLab recommends one device per room. The ultrasonic signals do not pass through walls, so each room where you have noticed flea activity should have its own unit. Most customers start with 3 to 6 devices to cover their main living areas.</p></details>
+    <details><summary>Is it safe around my pets?</summary><p>Yes. The device uses no chemicals, no sprays, and no toxic substances. It is designed to be safe for dogs, cats, and other household pets when used as directed. The ultrasonic frequencies are outside the hearing range of cats and dogs.</p></details>
+    <details><summary>Do I still need to treat my pet with flea medication?</summary><p>PestLab is designed to discourage fleas from staying in treated areas. For active infestations on your pet, consult your veterinarian about pet-specific flea treatments. PestLab can be used alongside other flea control methods.</p></details>
+    <details><summary>How long does it take to work?</summary><p>Many customers report noticing a difference within 2 to 7 days. The speed depends on the severity of the infestation. For heavy flea problems, PestLab recommends giving it up to 2 to 3 weeks.</p></details>
+    <details><summary>Will it work on fleas in the carpet?</summary><p>The device is designed to make the entire room uncomfortable for fleas, including those in carpets, furniture, and cracks in the floor. PestLab recommends thorough vacuuming alongside use of the device for the best results.</p></details>
+    <details><summary>How long does the device last?</summary><p>The PestLab Pest Repeller is built to last 4 to 5 years of continuous use. There are no batteries to replace, no cartridges to refill, and no moving parts.</p></details>
+    <details><summary>What if it does not work for me?</summary><p>Every order is backed by a 90-day money-back guarantee. If you are not satisfied, contact PestLab support for a full refund, no questions asked.</p></details>
+    <details><summary>Does it use a lot of electricity?</summary><p>No. The device consumes less power than an LED night light. You will not notice any difference on your electricity bill.</p></details>
+    <details><summary>Can I use it in every room?</summary><p>Yes. The device works in any room with a standard wall outlet, including bedrooms, living rooms, basements, and anywhere else fleas tend to gather. For the best results, keep one plugged in per room rather than moving a single device around.</p></details>
+  </div></section>
+
+  <div class="wrap">
+    <section class="conf">
+      <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/wshgvzdgzhuj.webp?width=300" alt="90-day money-back guarantee seal">
+      <h3>We're confident your pets will thank you</h3>
+      <p>Every order comes with a <b>90-day money-back guarantee</b>. Try it in your home for three full months. If you are not satisfied, return it for a full refund.</p>
+    </section>
+
+    <section class="vip">
+      <div class="hd">✨ HOLIDAY SALE ✨</div>
+      <img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=800" alt="PestLab with 90-day money-back guarantee badge">
+      <div class="fg">🎁 FREE BONUS WITH EVERY ORDER</div>
+      <h3><span>UP TO 40% OFF</span></h3>
+      <p>This limited-time offer is in high demand, and stock regularly sells out. Free shipping is included on all orders of 6 or more devices.</p>
+      <a class="cta" data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">GET UP TO 40% OFF <i>→</i></a>
+      <p class="de">DEAL ENDING IN: <span data-txt>00:00:00</span></p>
+      <div class="fs"><b>FREE</b> shipping on 6+ devices</div>
+      <small>Try it today with a 90-Day Money-Back Guarantee!</small>
+    </section>
+  </div>
+
+  <section class="attn"><div class="wrap">
+    <div class="k">ATTENTION:</div>
+    <h3>Only available at pestlab.co</h3>
+    <p>Please note: PestLab products are only available at pestlab.co. They are not sold on Amazon, Walmart, or eBay.</p>
+  </div></section>
+</main>
+
+<footer>
+  <img class="logo" src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bleu_8f4abece-f22d-44db-9a12-0278bf983be6.png?width=300" alt="PestLab">
+  <p><a href="https://pestlab.co/policies/refund-policy">Refund Policy</a><a href="https://pestlab.co/policies/shipping-policy">Shipping Policy</a><a href="https://pestlab.co/policies/terms-of-service">Terms</a><a href="https://pestlab.co/policies/privacy-policy">Privacy</a></p>
+  <p>© 2026 PestLab. Advertising disclosure: this page is an advertisement. Customer quotes are from reviews left on pestlab.co; individual results vary. Product features and claims are provided by the brand. Ultrasonic devices are not a substitute for professional pest control for an established infestation. PestLab is designed for the home, not as a flea treatment for pets; ask your veterinarian about flea prevention for your animal.</p>
+</footer>
+
+<script>
+  /* ===== Settings you can edit ===== */
+  // Change this one line to point every button somewhere else.
+  var CTA_URL = "https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2";
+  // Set to true to send the buy button straight to checkout with the chosen quantity
+  // (only if your bundle discounts apply automatically in the cart).
+  var USE_CART_LINK = false;
+  var VARIANT_ID = "43095471849526";
+  // Sale end date (real, editable). Timers count down to this and stop at zero.
+  var SALE_END = new Date("2026-11-30T23:59:59");
+
+  var TIERS = [
+    {qty:1, name:"Studio (1 room)",       each:29.99, off:"",    ship:false},
+    {qty:3, name:"Small Home (3 rooms)",  each:28.50, off:"5% off",  ship:false},
+    {qty:6, name:"Medium Home (6 rooms)", each:24.00, off:"20% off", ship:true},
+    {qty:9, name:"Large Home (9 rooms)",  each:18.00, off:"40% off", ship:true, best:true}
+  ];
+  var DEFAULT_QTY = 6, LIST = 29.99;
+
+  document.querySelectorAll('[data-cta]').forEach(function(a){ a.href = CTA_URL; });
+
+  var box = document.getElementById('tiers'), buy = document.getElementById('buybtn');
+  TIERS.forEach(function(t){
+    var save = LIST * t.qty - t.each * t.qty;
+    var el = document.createElement('label'); el.className = 'tier';
+    el.innerHTML = (t.best ? '<span class="best">Best value</span>' : '') +
+      '<div class="top"><input type="radio" name="tier"><div class="nm"><b>' + t.name + '</b>' +
+      (t.off ? '<span class="save">SAVE $' + save.toFixed(2) + ' (' + t.off + ')</span>' : '<small>' + t.qty + ' device</small>') + '</div>' +
+      '<div class="pr"><b>$' + t.each.toFixed(2) + '</b> <small>each</small>' + (t.off ? '<s>$' + LIST.toFixed(2) + '</s>' : '') + '</div></div>' +
+      (t.ship ? '<div class="gift">🚚 + FREE Shipping</div>' : '');
+    var r = el.querySelector('input');
+    r.onchange = function(){
+      box.querySelectorAll('.tier').forEach(function(x){ x.classList.remove('sel'); });
+      el.classList.add('sel');
+      buy.href = USE_CART_LINK ? 'https://pestlab.co/cart/' + VARIANT_ID + ':' + t.qty : CTA_URL;
+    };
+    if (t.qty === DEFAULT_QTY){ r.checked = true; el.classList.add('sel'); }
+    box.appendChild(el);
+  });
+  if (USE_CART_LINK) buy.href = 'https://pestlab.co/cart/' + VARIANT_ID + ':' + DEFAULT_QTY;
+
+  // gallery
+  var gm = document.getElementById('gmain'), thumbs = [].slice.call(document.querySelectorAll('#thumbs button')), gi = 0;
+  function show(i){ gi = (i + thumbs.length) % thumbs.length; gm.src = thumbs[gi].querySelector('img').src.replace('width=200', 'width=900');
+    thumbs.forEach(function(b, j){ b.classList.toggle('on', j === gi); }); }
+  thumbs.forEach(function(b, j){ b.onclick = function(){ show(j); }; });
+  document.getElementById('gp').onclick = function(){ show(gi - 1); };
+  document.getElementById('gn').onclick = function(){ show(gi + 1); };
+
+  // review slides
+  var slides = [].slice.call(document.querySelectorAll('#slides .slide')), si = 0;
+  function slide(n){ slides[si].classList.remove('on'); si = (n + slides.length) % slides.length; slides[si].classList.add('on'); }
+  document.getElementById('prev').onclick = function(){ slide(si - 1); };
+  document.getElementById('next').onclick = function(){ slide(si + 1); };
+
+  // countdowns
+  (function tick(){
+    var d = Math.max(0, SALE_END - new Date());
+    var days = Math.floor(d/864e5), h = Math.floor(d/36e5) % 24, m = Math.floor(d/6e4) % 60, s = Math.floor(d/1e3) % 60;
+    function p(n){ return (n < 10 ? '0' : '') + n; }
+    document.querySelectorAll('[data-cd]').forEach(function(c){
+      c.querySelector('[data-d]').textContent = p(days); c.querySelector('[data-h]').textContent = p(h); c.querySelector('[data-m]').textContent = p(m);
+    });
+    var txt = (days ? days + 'd ' : '') + p(h) + ':' + p(m) + ':' + p(s);
+    document.querySelectorAll('[data-txt]').forEach(function(e){ e.textContent = txt; });
+    if (d > 0) setTimeout(tick, 1000);
+  })();
+</script>
+</body>
+</html>
