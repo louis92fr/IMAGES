@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Tried 7 Ways to Get Rid of the Mice | PestLab</title>
+<meta name="description" content="I tried 7 ways to get rid of the mice in my house. Only one actually made them stop coming back.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Layout follows the Smooche "I tried 7 different" advertorial: periwinkle countdown bar,
+     pink masthead, pill + read time, two-tone headline, writer card, numbered sections that
+     alternate image/text on desktop, dashed offer cards, sticky bottom CTA, newsletter footer. */
+  :root{
+    --peri:#8096df; --pink:#df8096; --ink:#000; --text:#151515; --green:#2d4a22;
+    --soft:#f7f7f7; --line:#d9d9d9; --verify:#f1f2ff; --vblue:#186ede;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fff;color:var(--text);font-family:'Inter',system-ui,sans-serif;font-size:20px;line-height:1.3;-webkit-font-smoothing:antialiased;padding-bottom:120px}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  b,strong{font-weight:600;color:var(--ink)}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  /* countdown bar */
+  .bar{background:var(--peri);color:#fff}
+  .bar .in{max-width:880px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 22px}
+  .bar .t{font-size:14px;font-weight:500;line-height:1.35;max-width:170px}
+  .cd{display:flex;align-items:center;gap:6px}
+  .cd span{background:rgba(255,255,255,.22);border-radius:4px;min-width:46px;text-align:center;font-size:21px;font-weight:500;padding:6px 6px}
+  .cd i{font-style:normal;font-weight:700}
+
+  /* masthead */
+  .mast{background:var(--pink);color:#fff;text-align:center;padding:20px 16px 14px}
+  .mast .nm{font-size:28px;font-weight:700;letter-spacing:-.3px}
+  .mast nav{display:flex;justify-content:center;gap:22px;font-size:11px;font-weight:500;letter-spacing:.5px;margin-top:6px}
+
+  /* article head */
+  .meta{display:flex;align-items:center;gap:14px;margin:24px 0 16px;font-size:15px}
+  .pill{background:var(--peri);color:#fff;border-radius:20px;padding:4px 10px;font-size:15px}
+  .meta .dot{width:6px;height:6px;border-radius:50%;background:#000}
+  h1{font-size:36px;line-height:1.06;font-weight:700;color:var(--ink);letter-spacing:-.4px;margin-bottom:24px}
+  h1 span{display:block;color:var(--pink)}
+  .lead p{font-size:20px;line-height:1.4;color:var(--green);margin-bottom:22px}
+  .lead p b{color:var(--ink);font-weight:500}
+  .lead .six{color:var(--ink)}
+  .lead .six em{font-style:normal;color:var(--green)}
+  .writer{display:flex;align-items:center;gap:16px;border:1px solid var(--line);border-radius:16px;padding:10px 12px;max-width:340px;margin:4px 0 34px}
+  .writer .av{width:48px;height:48px;border-radius:50%;background:#f0e3e7;color:var(--pink);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex:0 0 48px}
+  .writer div{font-size:15px;line-height:1.3}
+  .writer b{display:block;font-weight:500}
+  .writer small{color:#505050;font-size:15px}
+  .writer .ver{margin-left:auto;background:var(--verify);color:var(--vblue);border-radius:20px;padding:4px 10px;font-size:14px;font-weight:500;white-space:nowrap;display:flex;align-items:center;gap:5px}
+  .writer .ver i{width:16px;height:16px;border-radius:50%;background:var(--vblue);color:#fff;font:700 10px/16px sans-serif;text-align:center;font-style:normal}
+  .hero{border-radius:16px;overflow:hidden;margin:0 0 28px}
+
+  /* numbered sections */
+  .sec{display:grid;gap:14px;margin:0 0 44px}
+  h2{font-size:29px;line-height:1.1;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .sec p{font-size:20px;line-height:1.2;margin-bottom:0}
+  .sec p + p{margin-top:14px}
+  .media{border-radius:16px;overflow:hidden;background:#fff}
+  .media img{width:100%;aspect-ratio:1/1;object-fit:cover}
+  .media.fit img{object-fit:contain;background:#fff}
+  .media + .media{margin-top:14px}
+
+  /* problem / solution split */
+  .ps{display:grid;grid-template-columns:1fr 1fr;border-radius:16px;overflow:hidden}
+  .ps > div{position:relative;min-width:0}
+  .ps img{width:100%;height:100%;aspect-ratio:1/2;object-fit:cover}
+  .ps span{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;font-size:12px;font-weight:700;letter-spacing:1px;padding:4px 10px;border-radius:20px}
+  .ps .s span{background:var(--peri)}
+
+  /* 3-step */
+  .steps{display:grid;gap:10px}
+  .steps div{display:flex;gap:14px;align-items:center;background:var(--soft);border-radius:14px;padding:14px 16px;font-size:17px;line-height:1.3}
+  .steps b{flex:0 0 38px;height:38px;border-radius:50%;background:var(--peri);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px}
+
+  /* offer card */
+  .offer{border:2px dashed var(--line);border-radius:18px;padding:26px 20px 18px;text-align:center;margin:0 auto 44px;max-width:420px}
+  .offer h3{font-size:24px;line-height:1.15;font-weight:600;color:var(--ink);letter-spacing:.2px}
+  .offer h3 span{color:var(--pink)}
+  .bundle{position:relative;background:var(--soft);border-radius:16px;margin:18px 0 16px;padding:20px 10px 14px;display:grid;grid-template-columns:1fr 1.3fr 1fr;align-items:end;gap:4px}
+  .bundle .it{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11px;line-height:1.2;color:#333;position:relative}
+  .bundle .it b{font-size:11px;font-weight:700}
+  .bundle .it .ic{width:56px;height:56px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:26px}
+  .bundle .it:not(.main):before{content:"+";position:absolute;top:-14px;color:var(--pink);font-size:18px}
+  .bundle .main img{width:100%;max-width:140px}
+  .bundle .badge{position:absolute;top:12px;right:12px;width:56px;height:56px;border-radius:50%;background:var(--peri);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;line-height:1}
+  .bundle .badge b{font-size:17px;color:#fff}
+  .bundle .badge small{font-size:9px}
+  .offer p{font-size:15px;line-height:1.35;color:#222;margin:0 6px 16px}
+  .try{display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--peri);color:#fff;text-decoration:none;border-radius:20px;padding:15px 20px;font-size:24px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase}
+  .try:hover{filter:brightness(.95)}
+  .offer small{display:block;font-size:12px;color:#5c5c5c;margin-top:12px}
+
+  /* newsletter */
+  .news{background:var(--soft);text-align:center;padding:34px 20px 30px;margin-top:10px}
+  .news .writer{margin:0 auto 22px;background:#fff;text-align:left}
+  .news h4{font-size:24px;font-weight:700;color:var(--ink);margin-bottom:6px}
+  .news p{font-size:16px;color:#444;margin-bottom:16px}
+  .news form{display:flex;gap:8px;max-width:420px;margin:0 auto}
+  .news input[type=email]{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:16px 'Inter',sans-serif}
+  .news button{background:var(--pink);color:#fff;border:0;border-radius:12px;padding:0 18px;font:600 16px 'Inter',sans-serif;cursor:pointer}
+  footer{text-align:center;font-size:12px;color:#777;line-height:1.6;padding:20px 20px 10px}
+  footer a{margin:0 6px}
+
+  /* sticky bottom CTA */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--soft);border-top:1px solid var(--line);border-radius:20px 20px 0 0;padding:16px 24px 10px;text-align:center}
+  .sticky a{display:block;max-width:850px;margin:0 auto;background:var(--pink);color:#fff;text-decoration:none;border-radius:20px;padding:15px;font-size:24px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase}
+  .sticky .loved{display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;color:#151515;margin-top:8px}
+  .sticky .faces{display:flex}
+  .sticky .faces i{width:18px;height:18px;border-radius:50%;border:1px solid #fff;margin-left:-6px;background-size:cover;background-position:center}
+  .sticky .faces i:first-child{margin-left:0}
+
+  /* desktop: sections alternate image/text side by side */
+  @media (min-width:760px){
+    h1{font-size:48px}
+    .lead{max-width:640px}
+    .sec{grid-template-columns:1fr 1fr;column-gap:44px;align-items:start;margin-bottom:60px}
+    .sec .txt{grid-column:1;grid-row:1}
+    .sec .med{grid-column:2;grid-row:1}
+    .sec.flip .txt{grid-column:2}
+    .sec.flip .med{grid-column:1}
+    .offer{margin-bottom:60px}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="in">
+  <div class="t">Up to 40% off + FREE shipping on 6+</div>
+  <div class="cd" data-cd><span data-a>00</span><i>:</i><span data-b>00</span><i>:</i><span data-c>00</span></div>
+</div></div>
+
+<header class="mast">
+  <div class="nm">PestLab Home Journal</div>
+  <nav><span>HOME</span><span>PEST CONTROL</span><span>MICE</span></nav>
+</header>
+
+<main class="wrap">
+  <div class="meta"><span class="pill">Most read 2026</span><span class="dot"></span><span>4 min read</span></div>
+  <h1>I Tried 7 Ways to Get Rid of the Mice in My House. <span>Only One Actually Made Them Stop Coming Back.</span></h1>
+
+  <div class="lead">
+    <p>Let me save you the frustration and the money.</p>
+    <p>A <b>$5 pack of snap traps</b>. A <b>$12 bucket of poison bait</b>. A <b>$35 canister of peppermint oil spray</b>. A <b>$15 tube of steel wool and caulk</b> for every crack I could find. An <b>$8 pack of dryer sheets</b> someone on the internet swore by. And a <b>$350 exterminator visit</b> that worked for about three weeks.</p>
+    <p class="six"><b>Six failures. One winner.</b> <em>Here's the difference:</em></p>
+  </div>
+
+  <div class="hero"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/WhatsApp_Image_2024-07-27_at_11.24.26_4.jpg?width=1000" alt="PestLab plugged into a kitchen wall outlet"></div>
+
+  <div class="writer">
+    <div class="av">MM</div>
+    <div><b>Michelle Mason</b><small>Home &amp; Lifestyle Writer</small></div>
+    <span class="ver"><i>✓</i>Verified</span>
+  </div>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>1. I stopped finding droppings behind the stove.</h2>
+      <p style="margin-top:14px">That was the first thing I noticed. After about a week, I <b>stopped finding the little black pellets</b> along the baseboards and behind the appliances. I had been wiping them up every single morning for months. When they finally stopped appearing, <b>I almost did not believe it.</b></p>
+    </div>
+    <div class="med">
+      <div class="ps">
+        <div><img src="img/dead-mice-discovered.jpg" alt="Mouse and droppings found inside a kitchen cabinet"><span>PROBLEM</span></div>
+        <div class="s"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/WhatsApp_Image_2024-07-27_at_11.24.26_4.jpg?width=600" alt="Clean kitchen with PestLab plugged in"><span>SOLUTION</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec flip">
+    <div class="txt">
+      <h2>2. No more snap traps on the kitchen floor.</h2>
+      <p style="margin-top:14px">I had <b>seven snap traps</b> spread across my kitchen at one point. Under the sink, behind the trash can, along the baseboard, next to the fridge. Every morning I had to check all of them, and whenever one actually caught something I had to pick it up and deal with it.</p>
+      <p>With PestLab, the device just sits in the outlet and runs. There is <b>nothing on the floor, nothing to check, and nothing to empty.</b></p>
+    </div>
+    <div class="med"><div class="media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/WhatsApp_Image_2024-07-27_at_11.24.26_5.jpg?width=900" alt="PestLab running in a kitchen" style="aspect-ratio:auto"></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>3. No poison anywhere near my dog.</h2>
+      <p style="margin-top:14px">That was the other thing I could never get comfortable with. The exterminator left bait stations along the baseboards, and <b>every time my dog sniffed near one my stomach dropped.</b></p>
+      <p>PestLab uses <b>no chemicals, no poison, and no bait</b>. It runs on ultrasonic and electromagnetic signals that are designed to be safe around pets.</p>
+    </div>
+    <div class="med">
+      <div class="media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/PestLab-Clip9b_1.jpg?width=900" alt="A PestLab customer at home with her dog" style="object-position:50% 30%"></div>
+      <div class="media fit"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=900" alt="PestLab Pest Repeller close-up"></div>
+    </div>
+  </section>
+
+  <section class="sec flip">
+    <div class="txt">
+      <h2>4. I do not hear them in the walls anymore.</h2>
+      <p style="margin-top:14px">The scratching used to wake me up at least twice a week. Sometimes it sounded like it was <b>right behind the headboard</b>. I started sleeping with earplugs, which is not exactly a solution.</p>
+      <p>After about two weeks with the PestLab devices running, <b>the scratching stopped.</b> I cannot say for certain that every mouse is gone, but I have not heard one in months.</p>
+    </div>
+    <div class="med">
+      <div class="media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/4_0ca9f2e0-4cc6-403a-b9a7-3e5133d21efa.jpg?width=900" alt="PestLab works in bedrooms and every room of the home"></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>5. My kitchen does not smell like peppermint oil anymore.</h2>
+      <p style="margin-top:14px">For about three months I was soaking cotton balls in peppermint oil and stuffing them into every gap I could find. <b>The whole house reeked of it.</b> My eyes watered. My dog avoided the kitchen entirely. And the mice did not seem to care at all.</p>
+      <p>The PestLab device has <b>no smell whatsoever</b>. It just plugs into the wall and runs silently.</p>
+    </div>
+    <div class="med"><div class="media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Lois_Pest_Lab_Stills_3_2.jpg?width=900" alt="A PestLab customer at home with her devices" style="object-position:50% 25%"></div></div>
+  </section>
+
+  <aside class="offer" data-offer></aside>
+
+  <section class="sec flip">
+    <div class="txt">
+      <h2>6. Here is how it actually works.</h2>
+      <p style="margin-top:14px">The idea is simple. The device sends out <b>alternating ultrasonic and electromagnetic signals</b> that are designed to make the environment uncomfortable for rodents. The signals reach <b>up to 300 square feet from a single outlet</b>, which means one device covers an average-sized room.</p>
+      <p>It runs <b>24 hours a day</b>, draws less power than a night light, and <b>lasts 4 to 5 years</b> without needing any replacement parts.</p>
+    </div>
+    <div class="med">
+      <div class="media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/3.jpg?width=900" alt="What PestLab is designed to protect from"></div>
+      <div class="steps" style="margin-top:14px">
+        <div><b>1</b>Plug the device into any standard outlet.</div>
+        <div><b>2</b>Ultrasonic and electromagnetic signals fill the room.</div>
+        <div><b>3</b>Mice are discouraged from staying in the treated area.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="txt">
+      <h2>7. I am not the only one who gave up on traps.</h2>
+      <p style="margin-top:14px">When I started researching this device, I realized <b>thousands of homeowners</b> had been going through the same cycle I went through. The traps, the poison, the peppermint oil, the exterminator, the caulk gun. And they all ended up here.</p>
+      <p><b>140,000+ customers</b> have tried the PestLab Pest Repeller. The brand has <b>7,000+ five-star reviews</b> and a <b>4.8 out of 5</b> rating. Reading their experiences is what finally convinced me to try it.</p>
+    </div>
+    <div class="med"><div class="media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/pestlab_mashup_images_correct_893d0741-ef79-4275-827d-a5517be3dd0e.png?width=900" alt="PestLab customers with their devices"></div></div>
+  </section>
+
+  <section class="sec flip">
+    <div class="txt">
+      <h2>8. Try it risk-free</h2>
+      <p style="margin-top:14px">PestLab is offering <b>up to 40% off</b> right now, plus <b>free shipping on 6 or more devices</b> and a <b>90-day money-back guarantee</b>. If it does not make a difference, you send it back for a full refund.</p>
+      <p>I had already spent more than $400 on traps, poison, peppermint oil, steel wool, and an exterminator. None of it lasted. At $30, PestLab was the cheapest thing I tried, and <b>it was the only one that actually worked.</b></p>
+    </div>
+    <div class="med"><div class="media"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/01C057ED-80E4-4BA9-ACA0-D976FC4F54E6_3.jpg?width=900" alt="A happy PestLab customer at home" style="object-position:50% 25%"></div></div>
+  </section>
+
+  <aside class="offer" data-offer></aside>
+</main>
+
+<section class="news">
+  <div class="writer">
+    <div class="av">MM</div>
+    <div><b>Michelle Mason</b><small>Home &amp; Lifestyle Writer</small></div>
+    <span class="ver"><i>✓</i>Verified</span>
+  </div>
+  <h4>A little more PestLab in your inbox.</h4>
+  <p>Seasonal pest tips, exclusive deals, and new arrivals.</p>
+  <form method="post" action="https://pestlab.co/contact#contact_form" accept-charset="UTF-8">
+    <input type="hidden" name="form_type" value="customer">
+    <input type="hidden" name="utf8" value="✓">
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <label for="nl-email" style="position:absolute;left:-9999px">Email</label>
+    <input id="nl-email" type="email" name="contact[email]" placeholder="Email" required>
+    <button type="submit">Sign up</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 PestLab. <a href="https://pestlab.co/policies/terms-of-service">Terms</a><a href="https://pestlab.co/policies/privacy-policy">Privacy</a><a href="https://pestlab.co/policies/refund-policy">Refunds</a></p>
+  <p>Advertising disclosure: this page is an advertisement published by PestLab. Product features and claims are provided by the brand; individual results vary. Ultrasonic devices are not a substitute for professional pest control for an established infestation.</p>
+</footer>
+
+<div class="sticky">
+  <a data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Live mouse-free →</a>
+  <div class="loved"><span class="faces">
+    <i style="background-image:url(https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Lois_Pest_Lab_Stills_3_2.jpg?width=60)"></i>
+    <i style="background-image:url(https://cdn.shopify.com/s/files/1/0621/0637/0102/files/Capture_d_ecran_2024-11-10_a_13.30.39_1.png?width=60)"></i>
+    <i style="background-image:url(https://cdn.shopify.com/s/files/1/0621/0637/0102/files/01C057ED-80E4-4BA9-ACA0-D976FC4F54E6_3.jpg?width=60)"></i>
+  </span>Loved by 140,000+ happy customers.</div>
+</div>
+
+<template id="offerTpl">
+  <h3>UP TO 40% OFF <span>+ FREE SHIPPING ON 6+ DEVICES</span></h3>
+  <div class="bundle">
+    <div class="it"><span class="ic">🚚</span><b>FREE</b>Shipping on 6+</div>
+    <div class="it main"><img src="https://cdn.shopify.com/s/files/1/0621/0637/0102/files/bb_main.png?width=400" alt="PestLab Pest Repeller with 90-day money-back guarantee badge"></div>
+    <div class="it"><span class="ic">🛡️</span><b>90-DAY</b>Money-back guarantee</div>
+    <div class="badge"><b>40%</b><small>OFF</small></div>
+  </div>
+  <p>I was skeptical too. After everything else I had tried, I did not think a little plug-in device was going to be any different. But with a 90-day money-back guarantee, I figured there was nothing to lose. If it did not work, I would just send it back for a full refund.</p>
+  <a class="try" data-cta href="https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2">Try it risk-free <span>→</span></a>
+  <small>Try it today with a 90-Day Money-Back Guarantee!</small>
+</template>
+
+<script>
+  /* ===== Settings you can edit ===== */
+  // Change this one line to point every button somewhere else.
+  var CTA_URL = "https://pestlab.co/products/pestlab-uso%E2%84%A2-banish-pests-for-good-2";
+  // Sale end date (real, editable). The top bar counts down to this and stops at zero.
+  var SALE_END = new Date("2026-11-30T23:59:59");
+
+  var tpl = document.getElementById('offerTpl');
+  document.querySelectorAll('[data-offer]').forEach(function(o){ o.appendChild(tpl.content.cloneNode(true)); });
+  document.querySelectorAll('[data-cta]').forEach(function(a){ a.href = CTA_URL; });
+
+  // Shows days : hours : minutes while more than a day is left, then hours : minutes : seconds.
+  (function tick(){
+    var d = Math.max(0, SALE_END - new Date());
+    var days = Math.floor(d/864e5), h = Math.floor(d/36e5) % 24, m = Math.floor(d/6e4) % 60, s = Math.floor(d/1e3) % 60;
+    function p(n){ return (n < 10 ? '0' : '') + n; }
+    var v = days > 0 ? [days, h, m] : [h, m, s];
+    var c = document.querySelector('[data-cd]');
+    c.querySelector('[data-a]').textContent = p(v[0]);
+    c.querySelector('[data-b]').textContent = p(v[1]);
+    c.querySelector('[data-c]').textContent = p(v[2]);
+    if (d > 0) setTimeout(tick, 1000);
+  })();
+</script>
+</body>
+</html>
